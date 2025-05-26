@@ -1,0 +1,174 @@
+[
+  {
+    "id": "809eaa19-d6e9-4a9d-86b6-093134baf3ba",
+    "name": "Полный демо навык",
+    "description": "Ввод → Регистр → Проверка → Условие → Цикл → API",
+    "startStepId": "f833a40f-4e1c-4931-92fa-da2cda2513ec",
+    "steps": [
+      {
+        "id": "f833a40f-4e1c-4931-92fa-da2cda2513ec",
+        "name": "Ввод текста",
+        "templateId": "f833a40f-4e1c-4931-92fa-da2cda2513ec",
+        "config": {
+          "defaultText": "Пример строки"
+        },
+        "inputs": [],
+        "outputs": [
+          {
+            "name": "text",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "id": "853f392e-e8c6-4d41-883e-5aba33b6e8d5",
+        "name": "ToUpperCase",
+        "templateId": "853f392e-e8c6-4d41-883e-5aba33b6e8d5",
+        "config": {},
+        "inputs": [
+          {
+            "name": "text",
+            "type": "string"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "upperText",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "id": "e34262b5-612c-4cc4-8e01-228239c17361",
+        "name": "Проверка длины",
+        "templateId": "e34262b5-612c-4cc4-8e01-228239c17361",
+        "config": {
+          "minLength": 5
+        },
+        "inputs": [
+          {
+            "name": "text",
+            "type": "string"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "isLong",
+            "type": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "9edd60f5-0527-4272-9f08-84f01364d5e8",
+        "name": "Условие",
+        "templateId": "9edd60f5-0527-4272-9f08-84f01364d5e8",
+        "config": {
+          "trueMessage": "Текст длинный",
+          "falseMessage": "Текст короткий"
+        },
+        "inputs": [
+          {
+            "name": "flag",
+            "type": "boolean"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "onTrue",
+            "type": "string"
+          },
+          {
+            "name": "onFalse",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "id": "33c95d09-3050-4a59-9c11-4ac909ee951a",
+        "name": "Цикл",
+        "templateId": "33c95d09-3050-4a59-9c11-4ac909ee951a",
+        "config": {
+          "suffix": "_обработано"
+        },
+        "inputs": [
+          {
+            "name": "items",
+            "type": "array"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "looped",
+            "type": "array"
+          }
+        ]
+      },
+      {
+        "id": "8fe61b5c-64e9-4714-91ef-e9649e58685d",
+        "name": "API вызов",
+        "templateId": "8fe61b5c-64e9-4714-91ef-e9649e58685d",
+        "config": {
+          "method": "POST",
+          "url": "https://api.example.com/search",
+          "headers": {}
+        },
+        "inputs": [
+          {
+            "name": "payload",
+            "type": "object"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "result",
+            "type": "object"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "id": "873345a1-1c58-45ed-878f-f939250bbabc",
+        "fromStepId": "f833a40f-4e1c-4931-92fa-da2cda2513ec",
+        "fromPort": "text",
+        "toStepId": "853f392e-e8c6-4d41-883e-5aba33b6e8d5",
+        "toPort": "text"
+      },
+      {
+        "id": "aeffbcfa-cb54-4095-a938-379bdb585cd4",
+        "fromStepId": "853f392e-e8c6-4d41-883e-5aba33b6e8d5",
+        "fromPort": "upperText",
+        "toStepId": "e34262b5-612c-4cc4-8e01-228239c17361",
+        "toPort": "text"
+      },
+      {
+        "id": "3e9776ee-e031-46e6-bcdf-89ee3edf7ca9",
+        "fromStepId": "e34262b5-612c-4cc4-8e01-228239c17361",
+        "fromPort": "isLong",
+        "toStepId": "9edd60f5-0527-4272-9f08-84f01364d5e8",
+        "toPort": "flag"
+      },
+      {
+        "id": "8554f7a1-472a-4a1d-81c8-7c61e88fd803",
+        "fromStepId": "9edd60f5-0527-4272-9f08-84f01364d5e8",
+        "fromPort": "onTrue",
+        "toStepId": "33c95d09-3050-4a59-9c11-4ac909ee951a",
+        "toPort": "items"
+      },
+      {
+        "id": "0f70df6b-012d-45a4-9d16-f4758fc64f60",
+        "fromStepId": "9edd60f5-0527-4272-9f08-84f01364d5e8",
+        "fromPort": "onFalse",
+        "toStepId": "33c95d09-3050-4a59-9c11-4ac909ee951a",
+        "toPort": "items"
+      },
+      {
+        "id": "6ca0fc4e-3f2f-417a-9c19-29693b866f6f",
+        "fromStepId": "33c95d09-3050-4a59-9c11-4ac909ee951a",
+        "fromPort": "looped",
+        "toStepId": "8fe61b5c-64e9-4714-91ef-e9649e58685d",
+        "toPort": "payload"
+      }
+    ]
+  }
+]

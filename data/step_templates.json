@@ -1,0 +1,272 @@
+[
+  {
+    "id": "f833a40f-4e1c-4931-92fa-da2cda2513ec",
+    "name": "Ввод текста",
+    "type": "code",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "text",
+        "type": "string",
+        "schema": {
+          "type": "string",
+          "title": "Введённый текст"
+        }
+      }
+    ],
+    "config": {
+      "defaultText": "Пример"
+    },
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "defaultText": {
+          "type": "string",
+          "title": "Текст по умолчанию"
+        }
+      }
+    },
+    "code": {
+      "language": "javascript",
+      "sourceCode": "return { text: config.defaultText };"
+    }
+  },
+  {
+    "id": "853f392e-e8c6-4d41-883e-5aba33b6e8d5",
+    "name": "К верхнему регистру",
+    "type": "code",
+    "inputs": [
+      {
+        "name": "text",
+        "type": "string",
+        "schema": {
+          "type": "string"
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "name": "upperText",
+        "type": "string",
+        "schema": {
+          "type": "string"
+        }
+      }
+    ],
+    "config": {},
+    "configSchema": {
+      "type": "object",
+      "properties": {}
+    },
+    "code": {
+      "language": "javascript",
+      "sourceCode": "return { upperText: text.toUpperCase() };"
+    }
+  },
+  {
+    "id": "e34262b5-612c-4cc4-8e01-228239c17361",
+    "name": "Проверка длины > N",
+    "type": "code",
+    "inputs": [
+      {
+        "name": "text",
+        "type": "string",
+        "schema": {
+          "type": "string"
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "name": "isLong",
+        "type": "boolean",
+        "schema": {
+          "type": "boolean"
+        }
+      }
+    ],
+    "config": {
+      "minLength": 5
+    },
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "minLength": {
+          "type": "number",
+          "title": "Минимальная длина"
+        }
+      }
+    },
+    "code": {
+      "language": "javascript",
+      "sourceCode": "return { isLong: text.length > config.minLength };"
+    }
+  },
+  {
+    "id": "9edd60f5-0527-4272-9f08-84f01364d5e8",
+    "name": "Условие (if)",
+    "type": "condition",
+    "inputs": [
+      {
+        "name": "flag",
+        "type": "boolean",
+        "schema": {
+          "type": "boolean"
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "name": "onTrue",
+        "type": "string",
+        "schema": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "onFalse",
+        "type": "string",
+        "schema": {
+          "type": "string"
+        }
+      }
+    ],
+    "config": {
+      "trueMessage": "Истина",
+      "falseMessage": "Ложь"
+    },
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "trueMessage": {
+          "type": "string",
+          "title": "Сообщение при истине"
+        },
+        "falseMessage": {
+          "type": "string",
+          "title": "Сообщение при лжи"
+        }
+      }
+    },
+    "code": {
+      "language": "javascript",
+      "sourceCode": "return flag ? { onTrue: config.trueMessage } : { onFalse: config.falseMessage };"
+    }
+  },
+  {
+    "id": "33c95d09-3050-4a59-9c11-4ac909ee951a",
+    "name": "Цикл по массиву",
+    "type": "loop",
+    "inputs": [
+      {
+        "name": "items",
+        "type": "array",
+        "schema": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "name": "looped",
+        "type": "array",
+        "schema": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    ],
+    "config": {
+      "suffix": "_обработано"
+    },
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "suffix": {
+          "type": "string",
+          "title": "Суффикс"
+        }
+      }
+    },
+    "code": {
+      "language": "javascript",
+      "sourceCode": "const processed = items.map(i => i + config.suffix); return { looped: processed };"
+    }
+  },
+  {
+    "id": "8fe61b5c-64e9-4714-91ef-e9649e58685d",
+    "name": "API вызов",
+    "type": "api_call",
+    "inputs": [
+      {
+        "name": "payload",
+        "type": "object",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "query": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "query"
+          ]
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "name": "result",
+        "type": "object",
+        "schema": {
+          "type": "object"
+        }
+      }
+    ],
+    "config": {
+      "method": "POST",
+      "url": "https://api.example.com/search",
+      "headers": {
+        "Authorization": ""
+      }
+    },
+    "configSchema": {
+      "type": "object",
+      "title": "Настройка API вызова",
+      "properties": {
+        "url": {
+          "type": "string",
+          "title": "URL запроса"
+        },
+        "method": {
+          "type": "string",
+          "enum": [
+            "GET",
+            "POST"
+          ],
+          "title": "Метод"
+        },
+        "headers": {
+          "type": "object",
+          "title": "Заголовки",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "url",
+        "method"
+      ]
+    },
+    "code": {
+      "language": "javascript",
+      "sourceCode": "// mock API call\nreturn { result: { data: 'ответ' } };"
+    }
+  }
+]

@@ -1,0 +1,953 @@
+[
+  {
+    "id": "228e4bcd-6a19-4ca5-b110-8fff8caebe98",
+    "skillId": "410b8eeb-4d23-4bd9-8d7b-c357f93f0f3c",
+    "timestamp": "2025-05-26T07:19:10.178Z",
+    "context": {
+      "input": "jopa"
+    }
+  },
+  {
+    "id": "039d5154-9cdc-4533-b674-629333424ecd",
+    "skillId": "410b8eeb-4d23-4bd9-8d7b-c357f93f0f3c",
+    "timestamp": "2025-05-26T07:20:44.104Z",
+    "context": {
+      "input": "jopa"
+    }
+  },
+  {
+    "id": "278a3a3c-c93a-48fd-97cd-8b654993ea3d",
+    "skillId": "410b8eeb-4d23-4bd9-8d7b-c357f93f0f3c",
+    "timestamp": "2025-05-26T07:23:04.321Z",
+    "context": {
+      "84d7322f-6ef5-4401-bfe4-d0dcd8bcfbae": {
+        "output": "test"
+      },
+      "5b7a1a6f-0e52-4164-a362-1892da78a6ce": {
+        "result": "test_done"
+      }
+    }
+  },
+  {
+    "id": "ba04f7cf-4870-41a5-a933-dcaa48465c57",
+    "skillId": "410b8eeb-4d23-4bd9-8d7b-c357f93f0f3c",
+    "timestamp": "2025-05-26T07:23:28.306Z",
+    "context": {
+      "84d7322f-6ef5-4401-bfe4-d0dcd8bcfbae": {
+        "output": "jopa"
+      },
+      "5b7a1a6f-0e52-4164-a362-1892da78a6ce": {
+        "result": "jopa_done"
+      }
+    }
+  },
+  {
+    "id": "d1a72dfd-bfb6-4283-82f0-7a36d15bfabb",
+    "skillId": "410b8eeb-4d23-4bd9-8d7b-c357f93f0f3c",
+    "timestamp": "2025-05-26T07:25:11.009Z",
+    "context": {
+      "result": "jopa_done"
+    }
+  },
+  {
+    "id": "1ef72f43-ce06-482a-b50c-0f09604af26c",
+    "skillId": "410b8eeb-4d23-4bd9-8d7b-c357f93f0f3c",
+    "timestamp": "2025-05-26T07:27:08.885Z",
+    "context": {
+      "context": {
+        "input": "jopa"
+      },
+      "outputs": {
+        "84d7322f-6ef5-4401-bfe4-d0dcd8bcfbae": {
+          "output": "jopa"
+        },
+        "5b7a1a6f-0e52-4164-a362-1892da78a6ce": {
+          "result": "jopa_done"
+        }
+      },
+      "result": {
+        "result": "jopa_done"
+      },
+      "lastStepId": "5b7a1a6f-0e52-4164-a362-1892da78a6ce"
+    }
+  },
+  {
+    "id": "8ae371be-932e-474a-838c-c0e530eb1b1f",
+    "skillId": "410b8eeb-4d23-4bd9-8d7b-c357f93f0f3c",
+    "timestamp": "2025-05-26T07:28:13.464Z",
+    "context": {
+      "context": {
+        "input": "jopa"
+      },
+      "outputs": {
+        "84d7322f-6ef5-4401-bfe4-d0dcd8bcfbae": {
+          "output": "jopa"
+        },
+        "5b7a1a6f-0e52-4164-a362-1892da78a6ce": {
+          "result": "jopa_done"
+        }
+      },
+      "result": {
+        "result": "jopa_done"
+      },
+      "lastStepId": "5b7a1a6f-0e52-4164-a362-1892da78a6ce"
+    }
+  },
+  {
+    "id": "6555f1d1-6a28-46bf-a2ad-cf2edb7be793",
+    "skillId": "62bb823d-5305-448d-85be-6b387b5a9c1f",
+    "timestamp": "2025-05-26T08:14:58.928Z",
+    "context": {
+      "context": {
+        "input": "jopa"
+      },
+      "outputs": {},
+      "lastStepId": "e6a7bb88-089c-44e4-8051-9210974c5ffb"
+    }
+  },
+  {
+    "id": "38f0158e-df0b-4c0f-a0ad-32db347f9d40",
+    "skillId": "62bb823d-5305-448d-85be-6b387b5a9c1f",
+    "timestamp": "2025-05-26T08:18:05.116Z",
+    "context": {
+      "context": {
+        "input": "jopa"
+      },
+      "outputs": {},
+      "lastStepId": "e6a7bb88-089c-44e4-8051-9210974c5ffb"
+    }
+  },
+  {
+    "id": "944453be-c71a-4371-b7c6-db0c61efe041",
+    "skillId": "62bb823d-5305-448d-85be-6b387b5a9c1f",
+    "timestamp": "2025-05-26T08:50:04.262Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "stepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+          "name": "Вход",
+          "input": {
+            "input": "jopa"
+          }
+        },
+        {
+          "stepId": "e6a7bb88-089c-44e4-8051-9210974c5ffb",
+          "name": "Модификация",
+          "input": {}
+        }
+      ],
+      "lastStepId": "e6a7bb88-089c-44e4-8051-9210974c5ffb"
+    }
+  },
+  {
+    "id": "a2266e48-0837-4301-98ba-f29902808649",
+    "skillId": "62bb823d-5305-448d-85be-6b387b5a9c1f",
+    "timestamp": "2025-05-26T08:52:06.644Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+          "name": "Вход",
+          "input": {
+            "input": "jopa"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "e6a7bb88-089c-44e4-8051-9210974c5ffb",
+          "name": "Модификация",
+          "input": {}
+        }
+      ],
+      "lastStepId": "e6a7bb88-089c-44e4-8051-9210974c5ffb"
+    }
+  },
+  {
+    "id": "64b0c257-028c-40e7-a09a-622ff567ff20",
+    "skillId": "62bb823d-5305-448d-85be-6b387b5a9c1f",
+    "timestamp": "2025-05-26T08:53:39.167Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+          "name": "Вход",
+          "input": {
+            "input": "jopa"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "e6a7bb88-089c-44e4-8051-9210974c5ffb",
+          "name": "Модификация",
+          "input": {}
+        }
+      ],
+      "lastStepId": "e6a7bb88-089c-44e4-8051-9210974c5ffb"
+    }
+  },
+  {
+    "id": "35aedcd5-4d5e-4bbd-bf43-2fd26bd98d44",
+    "skillId": "62bb823d-5305-448d-85be-6b387b5a9c1f",
+    "timestamp": "2025-05-26T08:55:09.115Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+          "name": "Вход",
+          "input": {
+            "input": "jopa"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "e6a7bb88-089c-44e4-8051-9210974c5ffb",
+          "name": "Модификация",
+          "input": {}
+        }
+      ],
+      "lastStepId": "e6a7bb88-089c-44e4-8051-9210974c5ffb"
+    }
+  },
+  {
+    "id": "16abe0bf-4152-4431-893d-e20a3a6be915",
+    "skillId": "62bb823d-5305-448d-85be-6b387b5a9c1f",
+    "timestamp": "2025-05-26T08:56:49.899Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+          "name": "Вход",
+          "input": {
+            "input": "jopa"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "e6a7bb88-089c-44e4-8051-9210974c5ffb",
+          "name": "Модификация",
+          "input": {}
+        }
+      ],
+      "lastStepId": "e6a7bb88-089c-44e4-8051-9210974c5ffb"
+    }
+  },
+  {
+    "id": "5d7bf8a1-4ce1-4d55-9f15-e33e1f818894",
+    "skillId": "62bb823d-5305-448d-85be-6b387b5a9c1f",
+    "timestamp": "2025-05-26T08:57:06.105Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+          "name": "Вход",
+          "input": {
+            "input": "jopa"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "e6a7bb88-089c-44e4-8051-9210974c5ffb",
+          "name": "Модификация",
+          "input": {}
+        }
+      ],
+      "lastStepId": "e6a7bb88-089c-44e4-8051-9210974c5ffb"
+    }
+  },
+  {
+    "id": "e5e15bf8-06ad-4db6-808e-daaa66b27a86",
+    "skillId": "62bb823d-5305-448d-85be-6b387b5a9c1f",
+    "timestamp": "2025-05-26T08:57:52.079Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+          "name": "Вход",
+          "input": {
+            "input": "jopa"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "e6a7bb88-089c-44e4-8051-9210974c5ffb",
+          "name": "Модификация",
+          "input": {}
+        }
+      ],
+      "lastStepId": "e6a7bb88-089c-44e4-8051-9210974c5ffb"
+    }
+  },
+  {
+    "id": "e0fe835e-af34-4591-b08c-d67312c32df3",
+    "skillId": "62bb823d-5305-448d-85be-6b387b5a9c1f",
+    "timestamp": "2025-05-26T08:59:26.118Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+          "name": "Вход",
+          "input": {
+            "input": "jopa"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "e6a7bb88-089c-44e4-8051-9210974c5ffb",
+          "name": "Модификация",
+          "input": {}
+        }
+      ],
+      "lastStepId": "e6a7bb88-089c-44e4-8051-9210974c5ffb"
+    }
+  },
+  {
+    "id": "d3a0cb40-b0cd-4f18-8b96-724b5920d976",
+    "skillId": "62bb823d-5305-448d-85be-6b387b5a9c1f",
+    "timestamp": "2025-05-26T09:01:32.202Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+          "name": "Вход",
+          "input": {
+            "input": "jopa"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "e6a7bb88-089c-44e4-8051-9210974c5ffb",
+          "name": "Модификация",
+          "input": {}
+        }
+      ],
+      "lastStepId": "e6a7bb88-089c-44e4-8051-9210974c5ffb"
+    }
+  },
+  {
+    "id": "65a1ceb3-4df3-43b0-804d-f4dc964d68bf",
+    "skillId": "62bb823d-5305-448d-85be-6b387b5a9c1f",
+    "timestamp": "2025-05-26T09:09:27.173Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+          "name": "Вход",
+          "input": {
+            "input": "jopa"
+          },
+          "output": {},
+          "error": "Cannot read properties of undefined (reading 'output')"
+        }
+      ],
+      "result": {},
+      "lastStepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+      "error": "Cannot read properties of undefined (reading 'output')"
+    }
+  },
+  {
+    "id": "4e9c9542-4dbd-4e99-b746-0a07aaeb39e3",
+    "skillId": "62bb823d-5305-448d-85be-6b387b5a9c1f",
+    "timestamp": "2025-05-26T09:13:04.546Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+          "name": "Вход",
+          "input": {
+            "input": "jopa"
+          },
+          "output": {},
+          "error": "Cannot read properties of undefined (reading 'output')"
+        }
+      ],
+      "result": {},
+      "lastStepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+      "error": "Cannot read properties of undefined (reading 'output')"
+    }
+  },
+  {
+    "id": "1f82a38a-79cc-4ca3-8cda-0987730372ac",
+    "skillId": "62bb823d-5305-448d-85be-6b387b5a9c1f",
+    "timestamp": "2025-05-26T09:14:43.754Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+          "name": "Вход",
+          "input": {
+            "input": "jopa"
+          },
+          "output": {},
+          "error": "Unexpected identifier 'console'"
+        }
+      ],
+      "result": {},
+      "lastStepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+      "error": "Unexpected identifier 'console'"
+    }
+  },
+  {
+    "id": "e67069be-7ccc-4794-9bf1-4dae8bf5bd4b",
+    "skillId": "62bb823d-5305-448d-85be-6b387b5a9c1f",
+    "timestamp": "2025-05-26T09:15:20.726Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+          "name": "Вход",
+          "input": {
+            "input": "jopa"
+          },
+          "output": {},
+          "error": "Unexpected identifier 'console'"
+        }
+      ],
+      "result": {},
+      "lastStepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+      "error": "Unexpected identifier 'console'"
+    }
+  },
+  {
+    "id": "3ca8264d-7f5e-4c34-93fb-d944925517cf",
+    "skillId": "62bb823d-5305-448d-85be-6b387b5a9c1f",
+    "timestamp": "2025-05-26T09:15:29.569Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+          "name": "Вход",
+          "input": {
+            "input": "jopa"
+          },
+          "output": {},
+          "error": "Unexpected identifier 'console'"
+        }
+      ],
+      "result": {},
+      "lastStepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+      "error": "Unexpected identifier 'console'"
+    }
+  },
+  {
+    "id": "02c61dbf-7f11-4cc9-9dd2-3da2360199d8",
+    "skillId": "62bb823d-5305-448d-85be-6b387b5a9c1f",
+    "timestamp": "2025-05-26T09:15:59.743Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+          "name": "Вход",
+          "input": {
+            "input": "jopa"
+          },
+          "output": {},
+          "error": "Cannot read properties of undefined (reading 'output')"
+        }
+      ],
+      "result": {},
+      "lastStepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+      "error": "Cannot read properties of undefined (reading 'output')"
+    }
+  },
+  {
+    "id": "fb5fcda9-7135-4454-a56e-37c3899d73be",
+    "skillId": "62bb823d-5305-448d-85be-6b387b5a9c1f",
+    "timestamp": "2025-05-26T09:16:11.068Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+          "name": "Вход",
+          "input": {
+            "input": "jopa"
+          },
+          "output": {},
+          "error": "Cannot read properties of undefined (reading 'output')"
+        }
+      ],
+      "result": {},
+      "lastStepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+      "error": "Cannot read properties of undefined (reading 'output')"
+    }
+  },
+  {
+    "id": "6005247e-f1e6-46fb-91a3-d2a219fc82b1",
+    "skillId": "62bb823d-5305-448d-85be-6b387b5a9c1f",
+    "timestamp": "2025-05-26T09:17:19.361Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+          "name": "Вход",
+          "input": {
+            "input": "jopa"
+          },
+          "output": {},
+          "error": "Cannot read properties of undefined (reading 'output')"
+        }
+      ],
+      "result": {},
+      "lastStepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+      "error": "Cannot read properties of undefined (reading 'output')"
+    }
+  },
+  {
+    "id": "1bafd6bb-6eb0-4249-8172-64dba9985e18",
+    "skillId": "62bb823d-5305-448d-85be-6b387b5a9c1f",
+    "timestamp": "2025-05-26T09:17:56.220Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+          "name": "Вход",
+          "input": {
+            "input": "jopa"
+          },
+          "output": {}
+        }
+      ],
+      "result": {},
+      "lastStepId": "977a2b34-5756-4032-97b6-eb14b9661e32"
+    }
+  },
+  {
+    "id": "0cd80198-1654-4a12-bcc8-3bb586a48581",
+    "skillId": "62bb823d-5305-448d-85be-6b387b5a9c1f",
+    "timestamp": "2025-05-26T09:18:28.242Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+          "name": "Вход",
+          "input": {
+            "input": "jopa"
+          },
+          "output": {},
+          "error": "Cannot read properties of undefined (reading 'output')"
+        }
+      ],
+      "result": {},
+      "lastStepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+      "error": "Cannot read properties of undefined (reading 'output')"
+    }
+  },
+  {
+    "id": "f216e99c-7903-4e5c-bd09-d4e80c35a918",
+    "skillId": "62bb823d-5305-448d-85be-6b387b5a9c1f",
+    "timestamp": "2025-05-26T09:19:15.369Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+          "name": "Вход",
+          "input": {
+            "input": "jopa"
+          },
+          "output": {},
+          "error": "Cannot read properties of undefined (reading 'output')"
+        }
+      ],
+      "result": {},
+      "lastStepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+      "error": "Cannot read properties of undefined (reading 'output')"
+    }
+  },
+  {
+    "id": "3706fbe2-e59e-4793-bd0d-2ae40371453d",
+    "skillId": "62bb823d-5305-448d-85be-6b387b5a9c1f",
+    "timestamp": "2025-05-26T09:20:05.803Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+          "name": "Вход",
+          "input": {
+            "input": "jopa"
+          },
+          "output": {},
+          "error": "Cannot read properties of undefined (reading 'output')"
+        }
+      ],
+      "result": {},
+      "lastStepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+      "error": "Cannot read properties of undefined (reading 'output')"
+    }
+  },
+  {
+    "id": "c8df215d-a00d-4abd-90aa-8d15dc252007",
+    "skillId": "62bb823d-5305-448d-85be-6b387b5a9c1f",
+    "timestamp": "2025-05-26T09:20:23.159Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+          "name": "Вход",
+          "input": {
+            "input": "jopa"
+          },
+          "output": {},
+          "error": "Cannot read properties of undefined (reading 'output')"
+        }
+      ],
+      "result": {},
+      "lastStepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+      "error": "Cannot read properties of undefined (reading 'output')"
+    }
+  },
+  {
+    "id": "a7bc2c2a-a7f5-4af2-9926-671275934766",
+    "skillId": "62bb823d-5305-448d-85be-6b387b5a9c1f",
+    "timestamp": "2025-05-26T09:20:51.283Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+          "name": "Вход",
+          "input": {
+            "input": "jopa"
+          },
+          "output": {}
+        }
+      ],
+      "result": {},
+      "lastStepId": "977a2b34-5756-4032-97b6-eb14b9661e32"
+    }
+  },
+  {
+    "id": "6552b296-6296-4ad9-9528-eae214a1731f",
+    "skillId": "62bb823d-5305-448d-85be-6b387b5a9c1f",
+    "timestamp": "2025-05-26T09:20:54.716Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+          "name": "Вход",
+          "input": {
+            "input": "jopa"
+          },
+          "output": {}
+        }
+      ],
+      "result": {},
+      "lastStepId": "977a2b34-5756-4032-97b6-eb14b9661e32"
+    }
+  },
+  {
+    "id": "acd074a8-52a0-4b75-9ec4-9f614b3012de",
+    "skillId": "62bb823d-5305-448d-85be-6b387b5a9c1f",
+    "timestamp": "2025-05-26T09:21:20.251Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+          "name": "Вход",
+          "input": {
+            "input": "jopa"
+          },
+          "output": {}
+        }
+      ],
+      "result": {},
+      "lastStepId": "977a2b34-5756-4032-97b6-eb14b9661e32"
+    }
+  },
+  {
+    "id": "f408ff30-6687-40a1-a3b6-8516f3fe9479",
+    "skillId": "62bb823d-5305-448d-85be-6b387b5a9c1f",
+    "timestamp": "2025-05-26T09:23:28.881Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+          "name": "Вход",
+          "input": {
+            "input": "jopa"
+          },
+          "output": {}
+        }
+      ],
+      "result": {},
+      "lastStepId": "977a2b34-5756-4032-97b6-eb14b9661e32"
+    }
+  },
+  {
+    "id": "d4525e66-f0ea-4dd3-9d59-9523012fdb1d",
+    "skillId": "62bb823d-5305-448d-85be-6b387b5a9c1f",
+    "timestamp": "2025-05-26T09:24:27.878Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+          "name": "Вход",
+          "input": {
+            "input": "jopa"
+          },
+          "output": {}
+        }
+      ],
+      "result": {},
+      "lastStepId": "977a2b34-5756-4032-97b6-eb14b9661e32"
+    }
+  },
+  {
+    "id": "272d1ec1-fd64-4e17-b4ad-77f3933957a4",
+    "skillId": "62bb823d-5305-448d-85be-6b387b5a9c1f",
+    "timestamp": "2025-05-26T09:25:32.120Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "977a2b34-5756-4032-97b6-eb14b9661e32",
+          "name": "Вход",
+          "input": {
+            "input": "jopa"
+          },
+          "output": {
+            "output": "jopa"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "e6a7bb88-089c-44e4-8051-9210974c5ffb",
+          "name": "Модификация",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "result": "jopa_done"
+          }
+        }
+      ],
+      "result": {
+        "result": "jopa_done"
+      },
+      "lastStepId": "e6a7bb88-089c-44e4-8051-9210974c5ffb"
+    }
+  },
+  {
+    "id": "8aa77fdc-e195-424e-a1df-20a344056ca9",
+    "skillId": "809eaa19-d6e9-4a9d-86b6-093134baf3ba",
+    "timestamp": "2025-05-26T09:39:07.335Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "f833a40f-4e1c-4931-92fa-da2cda2513ec",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {},
+          "error": "ReferenceError: config is not defined"
+        }
+      ],
+      "result": {},
+      "lastStepId": "f833a40f-4e1c-4931-92fa-da2cda2513ec",
+      "error": "ReferenceError: config is not defined"
+    }
+  },
+  {
+    "id": "b56b4149-6824-4aa0-96a2-3634a67c3468",
+    "skillId": "809eaa19-d6e9-4a9d-86b6-093134baf3ba",
+    "timestamp": "2025-05-26T09:40:31.908Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "f833a40f-4e1c-4931-92fa-da2cda2513ec",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {},
+          "error": "ReferenceError: config is not defined"
+        }
+      ],
+      "result": {},
+      "lastStepId": "f833a40f-4e1c-4931-92fa-da2cda2513ec",
+      "error": "ReferenceError: config is not defined"
+    }
+  },
+  {
+    "id": "cb3689eb-d605-4312-9591-83288a423cb0",
+    "skillId": "809eaa19-d6e9-4a9d-86b6-093134baf3ba",
+    "timestamp": "2025-05-26T09:41:03.276Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "f833a40f-4e1c-4931-92fa-da2cda2513ec",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "853f392e-e8c6-4d41-883e-5aba33b6e8d5",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "ПРИМЕР СТРОКИ"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "e34262b5-612c-4cc4-8e01-228239c17361",
+          "name": "Проверка длины",
+          "input": {
+            "text": "ПРИМЕР СТРОКИ"
+          },
+          "output": {
+            "isLong": true
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "9edd60f5-0527-4272-9f08-84f01364d5e8",
+          "name": "Условие",
+          "input": {
+            "flag": true
+          },
+          "output": {
+            "onTrue": "Текст длинный"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "33c95d09-3050-4a59-9c11-4ac909ee951a",
+          "name": "Цикл",
+          "input": {
+            "items": "Текст длинный"
+          },
+          "output": {},
+          "error": "Validation failed for input 'items': [{\"instancePath\":\"\",\"schemaPath\":\"#/type\",\"keyword\":\"type\",\"params\":{\"type\":\"array\"},\"message\":\"must be array\"}]"
+        }
+      ],
+      "result": {},
+      "lastStepId": "9edd60f5-0527-4272-9f08-84f01364d5e8",
+      "error": "Validation failed for input 'items': [{\"instancePath\":\"\",\"schemaPath\":\"#/type\",\"keyword\":\"type\",\"params\":{\"type\":\"array\"},\"message\":\"must be array\"}]"
+    }
+  },
+  {
+    "id": "93ec658c-d041-4603-84d0-0a21f4b1d3e9",
+    "skillId": "809eaa19-d6e9-4a9d-86b6-093134baf3ba",
+    "timestamp": "2025-05-26T09:44:41.072Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "f833a40f-4e1c-4931-92fa-da2cda2513ec",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "853f392e-e8c6-4d41-883e-5aba33b6e8d5",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "ПРИМЕР СТРОКИ"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "e34262b5-612c-4cc4-8e01-228239c17361",
+          "name": "Проверка длины",
+          "input": {
+            "text": "ПРИМЕР СТРОКИ"
+          },
+          "output": {
+            "isLong": true
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "9edd60f5-0527-4272-9f08-84f01364d5e8",
+          "name": "Условие",
+          "input": {
+            "flag": true
+          },
+          "output": {
+            "onTrue": "Текст длинный"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "9edd60f5-0527-4272-9f08-84f01364d5e8",
+          "name": "Условие",
+          "input": {
+            "flag": true
+          },
+          "output": {},
+          "error": "Type mismatch on port link '8554f7a1-472a-4a1d-81c8-7c61e88fd803': string → array"
+        }
+      ],
+      "result": {},
+      "lastStepId": "9edd60f5-0527-4272-9f08-84f01364d5e8",
+      "error": "Type mismatch on port link '8554f7a1-472a-4a1d-81c8-7c61e88fd803': string → array"
+    }
+  }
+]

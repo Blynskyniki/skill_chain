@@ -1,0 +1,23 @@
+pre-commit:
+  piped: true
+  commands:
+    1_clean:
+      run: find ./services -type d -name "*dist*" -exec rm -rf {} \; || echo ""
+    2_schemes:
+      run: |
+        rm -rf ./services/api/dist
+        find "./services" -name "*service.schema.json*" -exec npx nsc-cli --schema {} \;
+    3_eslint:
+      glob: '*.{ts,jsx,tsx}'
+      run: npx eslint --ignore-path .eslintignore --fix {staged_files}
+    4_test:
+      run: npm run test
+    5_build:
+      run: npx tsc --noEmit
+    6_stage:
+      run: git add .
+commit-msg:
+  parallel: true
+  commands:
+    commitlint:
+      run: npx commitlint --edit
