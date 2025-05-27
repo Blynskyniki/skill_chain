@@ -4,8 +4,8 @@ import {v4 as uuidv4} from 'uuid';
 import {StepTemplateRepository} from './repositories/StepTemplateRepository';
 import {SkillRepository} from './repositories/SkillRepository';
 import {ExecutionLogRepository} from './repositories/ExecutionLogRepository';
-import {SkillExecutor} from './executor';
-import {Skill, SkillExecutionLog, StepTemplate} from './types';
+import {SkillExecutor} from './executors';
+import {Skill, SkillExecutionLog, SkillStep} from './types';
 
 /**
  * Типы, импортируемые из './types':
@@ -24,7 +24,7 @@ export interface CreateSkillPayload extends Omit<Skill, 'id'> {}
 
 export interface UpdateSkillPayload extends Partial<CreateSkillPayload> {}
 
-export interface CreateTemplatePayload extends Omit<StepTemplate, 'id'> {}
+export interface CreateTemplatePayload extends Omit<SkillStep, 'id'> {}
 
 export interface UpdateTemplatePayload extends Partial<CreateTemplatePayload> {}
 
@@ -35,7 +35,7 @@ export async function registerRoutes(app: FastifyInstance) {
 
   // Step Templates
   app.get('/step-templates', async (_, reply) => {
-    const result: StepTemplate[] = await stepTemplates.getAll();
+    const result: SkillStep[] = await stepTemplates.getAll();
     reply.send(result);
   });
 
@@ -108,8 +108,7 @@ export async function registerRoutes(app: FastifyInstance) {
       if (!skill) return reply.status(404).send({ error: 'Skill not found' });
 
       try {
-        const templateMap = await stepTemplates.mapById();
-        const executor = new SkillExecutor(skill, templateMap);
+        const executor = new SkillExecutor(skill);
         const run_data = await executor.run(req.body); // включает context + steps + result
         const log = await executions.log(skill.id, run_data);
 

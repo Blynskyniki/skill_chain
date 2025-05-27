@@ -1,9 +1,18 @@
 [
   {
-    "id": "f833a40f-4e1c-4931-92fa-da2cda2513ec",
+    "id": "20603550-1ae8-497a-b77a-444d65683fcb",
     "name": "Ввод текста",
     "type": "code",
-    "inputs": [],
+    "inputs": [
+      {
+        "name": "text",
+        "type": "string",
+        "schema": {
+          "type": "string",
+          "title": "Введённый текст"
+        }
+      }
+    ],
     "outputs": [
       {
         "name": "text",
@@ -28,11 +37,11 @@
     },
     "code": {
       "language": "javascript",
-      "sourceCode": "return { text: config.defaultText };"
+      "sourceCode": "return { text: text ?? config.defaultText };"
     }
   },
   {
-    "id": "853f392e-e8c6-4d41-883e-5aba33b6e8d5",
+    "id": "9c937d7d-3b9d-4a1e-81ff-53b637b243a1",
     "name": "К верхнему регистру",
     "type": "code",
     "inputs": [
@@ -64,7 +73,7 @@
     }
   },
   {
-    "id": "e34262b5-612c-4cc4-8e01-228239c17361",
+    "id": "40df04f6-975d-4672-8b3c-5eb8c41418f5",
     "name": "Проверка длины > N",
     "type": "code",
     "inputs": [
@@ -103,7 +112,7 @@
     }
   },
   {
-    "id": "9edd60f5-0527-4272-9f08-84f01364d5e8",
+    "id": "24380a14-ca57-4afc-a50b-0246fd15816f",
     "name": "Условие (if)",
     "type": "condition",
     "inputs": [
@@ -154,7 +163,7 @@
     }
   },
   {
-    "id": "33c95d09-3050-4a59-9c11-4ac909ee951a",
+    "id": "4099088f-9d42-4ea4-8fbb-c84cc97278d7",
     "name": "Цикл по массиву",
     "type": "loop",
     "inputs": [
@@ -199,7 +208,7 @@
     }
   },
   {
-    "id": "8fe61b5c-64e9-4714-91ef-e9649e58685d",
+    "id": "922b48b6-4e87-4a49-a5ec-eaa2845c8fd0",
     "name": "API вызов",
     "type": "api_call",
     "inputs": [
@@ -267,6 +276,57 @@
     "code": {
       "language": "javascript",
       "sourceCode": "// mock API call\nreturn { result: { data: 'ответ' } };"
+    }
+  },
+  {
+    "id": "b8967c09-fdb7-4032-b9e8-5d13aae15965",
+    "name": "LLM вызов",
+    "type": "code",
+    "description": "Отправляет текст в LLM и возвращает ответ",
+    "inputs": [
+      {
+        "name": "prompt",
+        "type": "string",
+        "schema": {
+          "type": "string",
+          "title": "Промпт"
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "name": "completion",
+        "type": "string",
+        "schema": {
+          "type": "string",
+          "title": "Ответ модели"
+        }
+      }
+    ],
+    "config": {
+      "apiKey": "sk-to8ADu5fQYxpAd_BOcshlOCeuXHlWVTVGkCc_OzjdIT3BlbkFJKP-xTU231BP1-2N5fWGnl5xT4EM6XPr6if-VKpUL8A",
+      "model": "gpt-3.5-turbo"
+    },
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "title": "API ключ OpenAI"
+        },
+        "model": {
+          "type": "string",
+          "title": "ID модели"
+        }
+      },
+      "required": [
+        "apiKey",
+        "model"
+      ]
+    },
+    "code": {
+      "language": "javascript",
+      "sourceCode": "const response = await fetch('https://api.openai.com/v1/chat/completions', { method: 'POST',  headers: { 'Authorization': 'Bearer ' + config.apiKey,  'Content-Type': 'application/json'  }, body: JSON.stringify({    model: config.model,  messages: [{ role: 'user', content: prompt }]})});const data = await response.json();console.log('data',data) ;if (data?.error?.message){throw new Error(data?.error?.message)} return { completion: data.choices?.[0].message.content ||'qq' };"
     }
   }
 ]

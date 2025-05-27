@@ -949,5 +949,3250 @@
       "lastStepId": "9edd60f5-0527-4272-9f08-84f01364d5e8",
       "error": "Type mismatch on port link '8554f7a1-472a-4a1d-81c8-7c61e88fd803': string → array"
     }
+  },
+  {
+    "id": "8b7e834e-2010-4ffc-ba43-e5af0679e531",
+    "skillId": "bfb61e85-3358-44f8-8e77-9f31227d78d1",
+    "timestamp": "2025-05-26T09:53:53.823Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d5e06552-e45a-489e-85de-19753effb5d1",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "e3c02db6-5b6b-410f-854f-92ef3441a1e7",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "ПРИМЕР СТРОКИ"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "d266bfc2-bf13-479b-ab76-d9e38827b99d",
+          "name": "Проверка длины",
+          "input": {
+            "text": "ПРИМЕР СТРОКИ"
+          },
+          "output": {
+            "isLong": true
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "d3c1554f-6613-40e5-aef2-ac1d651e43f8",
+          "name": "Условие",
+          "input": {
+            "flag": true
+          },
+          "output": {
+            "onTrue": "Текст длинный"
+          }
+        }
+      ],
+      "result": {
+        "onTrue": "Текст длинный"
+      },
+      "lastStepId": "d3c1554f-6613-40e5-aef2-ac1d651e43f8"
+    }
+  },
+  {
+    "id": "0444b445-57c4-4e26-af24-c97ec112e58f",
+    "skillId": "bfb61e85-3358-44f8-8e77-9f31227d78d1",
+    "timestamp": "2025-05-26T09:55:57.834Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d5e06552-e45a-489e-85de-19753effb5d1",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "e3c02db6-5b6b-410f-854f-92ef3441a1e7",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "ПРИМЕР СТРОКИ"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "d266bfc2-bf13-479b-ab76-d9e38827b99d",
+          "name": "Проверка длины",
+          "input": {
+            "text": "ПРИМЕР СТРОКИ"
+          },
+          "output": {
+            "isLong": true
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "d3c1554f-6613-40e5-aef2-ac1d651e43f8",
+          "name": "Условие",
+          "input": {
+            "flag": true
+          },
+          "output": {
+            "onTrue": "Текст длинный"
+          }
+        }
+      ],
+      "result": {
+        "onTrue": "Текст длинный"
+      },
+      "lastStepId": "d3c1554f-6613-40e5-aef2-ac1d651e43f8"
+    }
+  },
+  {
+    "id": "3c816c0b-bbda-419f-b38e-ed397bb9f9f9",
+    "skillId": "bfb61e85-3358-44f8-8e77-9f31227d78d1",
+    "timestamp": "2025-05-26T09:57:17.622Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d5e06552-e45a-489e-85de-19753effb5d1",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "e3c02db6-5b6b-410f-854f-92ef3441a1e7",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "ПРИМЕР СТРОКИ"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "d266bfc2-bf13-479b-ab76-d9e38827b99d",
+          "name": "Проверка длины",
+          "input": {
+            "text": "ПРИМЕР СТРОКИ"
+          },
+          "output": {
+            "isLong": true
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "d3c1554f-6613-40e5-aef2-ac1d651e43f8",
+          "name": "Условие",
+          "input": {
+            "flag": true
+          },
+          "output": {
+            "onTrue": "Текст длинный"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "b1f716c3-8de5-4f32-9b03-0e2e68bc12db",
+          "name": "llm",
+          "input": {
+            "prompt": "Текст длинный"
+          },
+          "output": {},
+          "error": "await is only valid in async functions and the top level bodies of modules"
+        }
+      ],
+      "result": {},
+      "lastStepId": "d3c1554f-6613-40e5-aef2-ac1d651e43f8",
+      "error": "await is only valid in async functions and the top level bodies of modules"
+    }
+  },
+  {
+    "id": "6daa4a21-c146-4fc7-84d0-b97a3ad884e2",
+    "skillId": "bfb61e85-3358-44f8-8e77-9f31227d78d1",
+    "timestamp": "2025-05-26T09:59:13.233Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d5e06552-e45a-489e-85de-19753effb5d1",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {}
+        }
+      ],
+      "result": {},
+      "lastStepId": "d5e06552-e45a-489e-85de-19753effb5d1"
+    }
+  },
+  {
+    "id": "7910e979-92fb-4582-b66b-90de7ce0fc8f",
+    "skillId": "bfb61e85-3358-44f8-8e77-9f31227d78d1",
+    "timestamp": "2025-05-26T10:00:21.514Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d5e06552-e45a-489e-85de-19753effb5d1",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {}
+        }
+      ],
+      "result": {},
+      "lastStepId": "d5e06552-e45a-489e-85de-19753effb5d1"
+    }
+  },
+  {
+    "id": "571bda19-e9b8-4fbf-a1be-1c1d391b660a",
+    "skillId": "bfb61e85-3358-44f8-8e77-9f31227d78d1",
+    "timestamp": "2025-05-26T10:00:38.654Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d5e06552-e45a-489e-85de-19753effb5d1",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {},
+          "error": "await is only valid in async functions and the top level bodies of modules"
+        }
+      ],
+      "result": {},
+      "lastStepId": "d5e06552-e45a-489e-85de-19753effb5d1",
+      "error": "await is only valid in async functions and the top level bodies of modules"
+    }
+  },
+  {
+    "id": "2021cf02-0cd1-410b-81f4-98ca6121d627",
+    "skillId": "bfb61e85-3358-44f8-8e77-9f31227d78d1",
+    "timestamp": "2025-05-26T10:01:22.033Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d5e06552-e45a-489e-85de-19753effb5d1",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {}
+        }
+      ],
+      "result": {},
+      "lastStepId": "d5e06552-e45a-489e-85de-19753effb5d1"
+    }
+  },
+  {
+    "id": "235ce648-83fb-4084-8efb-7d14d88f9e74",
+    "skillId": "bfb61e85-3358-44f8-8e77-9f31227d78d1",
+    "timestamp": "2025-05-26T10:02:58.728Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d5e06552-e45a-489e-85de-19753effb5d1",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {}
+        }
+      ],
+      "result": {},
+      "lastStepId": "d5e06552-e45a-489e-85de-19753effb5d1"
+    }
+  },
+  {
+    "id": "662431db-7c2f-4bac-83c2-d6c18b00d8a0",
+    "skillId": "bfb61e85-3358-44f8-8e77-9f31227d78d1",
+    "timestamp": "2025-05-26T10:30:53.311Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d5e06552-e45a-489e-85de-19753effb5d1",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {}
+        }
+      ],
+      "result": {},
+      "lastStepId": "d5e06552-e45a-489e-85de-19753effb5d1"
+    }
+  },
+  {
+    "id": "01a15c0c-a0de-4c4e-9036-ea4f50207f18",
+    "skillId": "bfb61e85-3358-44f8-8e77-9f31227d78d1",
+    "timestamp": "2025-05-26T10:30:59.375Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d5e06552-e45a-489e-85de-19753effb5d1",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {}
+        }
+      ],
+      "result": {},
+      "lastStepId": "d5e06552-e45a-489e-85de-19753effb5d1"
+    }
+  },
+  {
+    "id": "89646631-3dd7-488c-b64d-6cd116d089f8",
+    "skillId": "bfb61e85-3358-44f8-8e77-9f31227d78d1",
+    "timestamp": "2025-05-26T10:44:04.418Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d5e06552-e45a-489e-85de-19753effb5d1",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {}
+        }
+      ],
+      "result": {},
+      "lastStepId": "d5e06552-e45a-489e-85de-19753effb5d1"
+    }
+  },
+  {
+    "id": "4c5629b3-51a9-43cb-a008-3d20f7e732d1",
+    "skillId": "bfb61e85-3358-44f8-8e77-9f31227d78d1",
+    "timestamp": "2025-05-26T10:44:33.876Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d5e06552-e45a-489e-85de-19753effb5d1",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {}
+        }
+      ],
+      "result": {},
+      "lastStepId": "d5e06552-e45a-489e-85de-19753effb5d1"
+    }
+  },
+  {
+    "id": "dcd0db4c-0837-4920-94c0-5f94a3be2f0d",
+    "skillId": "bfb61e85-3358-44f8-8e77-9f31227d78d1",
+    "timestamp": "2025-05-26T10:45:01.864Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d5e06552-e45a-489e-85de-19753effb5d1",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {}
+        }
+      ],
+      "result": {},
+      "lastStepId": "d5e06552-e45a-489e-85de-19753effb5d1"
+    }
+  },
+  {
+    "id": "f066bb4c-4c74-42dc-bcd7-650fdacf65b1",
+    "skillId": "bfb61e85-3358-44f8-8e77-9f31227d78d1",
+    "timestamp": "2025-05-26T10:45:45.881Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d5e06552-e45a-489e-85de-19753effb5d1",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {}
+        }
+      ],
+      "result": {},
+      "lastStepId": "d5e06552-e45a-489e-85de-19753effb5d1"
+    }
+  },
+  {
+    "id": "e3ae2f53-efa9-40e7-bd6b-dcfb6a35e012",
+    "skillId": "bfb61e85-3358-44f8-8e77-9f31227d78d1",
+    "timestamp": "2025-05-26T10:45:51.126Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d5e06552-e45a-489e-85de-19753effb5d1",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {}
+        }
+      ],
+      "result": {},
+      "lastStepId": "d5e06552-e45a-489e-85de-19753effb5d1"
+    }
+  },
+  {
+    "id": "1db095b9-f391-4128-aef2-e8b18d8d803c",
+    "skillId": "bfb61e85-3358-44f8-8e77-9f31227d78d1",
+    "timestamp": "2025-05-26T10:46:25.711Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d5e06552-e45a-489e-85de-19753effb5d1",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "e3c02db6-5b6b-410f-854f-92ef3441a1e7",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "ПРИМЕР СТРОКИ"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "d266bfc2-bf13-479b-ab76-d9e38827b99d",
+          "name": "Проверка длины",
+          "input": {
+            "text": "ПРИМЕР СТРОКИ"
+          },
+          "output": {
+            "isLong": true
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "d3c1554f-6613-40e5-aef2-ac1d651e43f8",
+          "name": "Условие",
+          "input": {
+            "flag": true
+          },
+          "output": {
+            "onTrue": "Текст длинный"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "b1f716c3-8de5-4f32-9b03-0e2e68bc12db",
+          "name": "llm",
+          "input": {
+            "prompt": "Текст длинный"
+          },
+          "output": {},
+          "error": "ReferenceError: require is not defined"
+        }
+      ],
+      "result": {},
+      "lastStepId": "d3c1554f-6613-40e5-aef2-ac1d651e43f8",
+      "error": "ReferenceError: require is not defined"
+    }
+  },
+  {
+    "id": "1792ad8b-098d-49b4-beed-030ede121a40",
+    "skillId": "bfb61e85-3358-44f8-8e77-9f31227d78d1",
+    "timestamp": "2025-05-26T10:49:07.252Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d5e06552-e45a-489e-85de-19753effb5d1",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "e3c02db6-5b6b-410f-854f-92ef3441a1e7",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "ПРИМЕР СТРОКИ"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "d266bfc2-bf13-479b-ab76-d9e38827b99d",
+          "name": "Проверка длины",
+          "input": {
+            "text": "ПРИМЕР СТРОКИ"
+          },
+          "output": {
+            "isLong": true
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "d3c1554f-6613-40e5-aef2-ac1d651e43f8",
+          "name": "Условие",
+          "input": {
+            "flag": true
+          },
+          "output": {
+            "onTrue": "Текст длинный"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "b1f716c3-8de5-4f32-9b03-0e2e68bc12db",
+          "name": "llm",
+          "input": {
+            "prompt": "Текст длинный"
+          },
+          "output": {},
+          "error": "ReferenceError: require is not defined"
+        }
+      ],
+      "result": {},
+      "lastStepId": "d3c1554f-6613-40e5-aef2-ac1d651e43f8",
+      "error": "ReferenceError: require is not defined"
+    }
+  },
+  {
+    "id": "9ea7b8a9-4fd7-4053-95ef-d980f04b07bc",
+    "skillId": "bfb61e85-3358-44f8-8e77-9f31227d78d1",
+    "timestamp": "2025-05-26T10:49:25.809Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d5e06552-e45a-489e-85de-19753effb5d1",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "e3c02db6-5b6b-410f-854f-92ef3441a1e7",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "ПРИМЕР СТРОКИ"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "d266bfc2-bf13-479b-ab76-d9e38827b99d",
+          "name": "Проверка длины",
+          "input": {
+            "text": "ПРИМЕР СТРОКИ"
+          },
+          "output": {
+            "isLong": true
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "d3c1554f-6613-40e5-aef2-ac1d651e43f8",
+          "name": "Условие",
+          "input": {
+            "flag": true
+          },
+          "output": {
+            "onTrue": "Текст длинный"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "b1f716c3-8de5-4f32-9b03-0e2e68bc12db",
+          "name": "llm",
+          "input": {
+            "prompt": "Текст длинный"
+          },
+          "output": {},
+          "error": "TypeError: Cannot read properties of undefined (reading '0')"
+        }
+      ],
+      "result": {},
+      "lastStepId": "d3c1554f-6613-40e5-aef2-ac1d651e43f8",
+      "error": "TypeError: Cannot read properties of undefined (reading '0')"
+    }
+  },
+  {
+    "id": "d5d408e9-d6e7-4c5d-a908-90188d56b551",
+    "skillId": "bfb61e85-3358-44f8-8e77-9f31227d78d1",
+    "timestamp": "2025-05-26T10:50:00.901Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d5e06552-e45a-489e-85de-19753effb5d1",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "e3c02db6-5b6b-410f-854f-92ef3441a1e7",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "ПРИМЕР СТРОКИ"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "d266bfc2-bf13-479b-ab76-d9e38827b99d",
+          "name": "Проверка длины",
+          "input": {
+            "text": "ПРИМЕР СТРОКИ"
+          },
+          "output": {
+            "isLong": true
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "d3c1554f-6613-40e5-aef2-ac1d651e43f8",
+          "name": "Условие",
+          "input": {
+            "flag": true
+          },
+          "output": {
+            "onTrue": "Текст длинный"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "b1f716c3-8de5-4f32-9b03-0e2e68bc12db",
+          "name": "llm",
+          "input": {
+            "prompt": "Текст длинный"
+          },
+          "output": {}
+        }
+      ],
+      "result": {},
+      "lastStepId": "b1f716c3-8de5-4f32-9b03-0e2e68bc12db"
+    }
+  },
+  {
+    "id": "224fca58-a1bd-4f26-b762-ddd063316069",
+    "skillId": "bfb61e85-3358-44f8-8e77-9f31227d78d1",
+    "timestamp": "2025-05-26T10:50:19.538Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d5e06552-e45a-489e-85de-19753effb5d1",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "e3c02db6-5b6b-410f-854f-92ef3441a1e7",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "ПРИМЕР СТРОКИ"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "d266bfc2-bf13-479b-ab76-d9e38827b99d",
+          "name": "Проверка длины",
+          "input": {
+            "text": "ПРИМЕР СТРОКИ"
+          },
+          "output": {
+            "isLong": true
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "d3c1554f-6613-40e5-aef2-ac1d651e43f8",
+          "name": "Условие",
+          "input": {
+            "flag": true
+          },
+          "output": {
+            "onTrue": "Текст длинный"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "b1f716c3-8de5-4f32-9b03-0e2e68bc12db",
+          "name": "llm",
+          "input": {
+            "prompt": "Текст длинный"
+          },
+          "output": {},
+          "error": "TypeError: Cannot read properties of undefined (reading '0')"
+        }
+      ],
+      "result": {},
+      "lastStepId": "d3c1554f-6613-40e5-aef2-ac1d651e43f8",
+      "error": "TypeError: Cannot read properties of undefined (reading '0')"
+    }
+  },
+  {
+    "id": "550cf32d-ff23-4560-8bb9-2294cc2d1295",
+    "skillId": "bfb61e85-3358-44f8-8e77-9f31227d78d1",
+    "timestamp": "2025-05-26T10:50:41.204Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d5e06552-e45a-489e-85de-19753effb5d1",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "e3c02db6-5b6b-410f-854f-92ef3441a1e7",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "ПРИМЕР СТРОКИ"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "d266bfc2-bf13-479b-ab76-d9e38827b99d",
+          "name": "Проверка длины",
+          "input": {
+            "text": "ПРИМЕР СТРОКИ"
+          },
+          "output": {
+            "isLong": true
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "d3c1554f-6613-40e5-aef2-ac1d651e43f8",
+          "name": "Условие",
+          "input": {
+            "flag": true
+          },
+          "output": {
+            "onTrue": "Текст длинный"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "b1f716c3-8de5-4f32-9b03-0e2e68bc12db",
+          "name": "llm",
+          "input": {
+            "prompt": "Текст длинный"
+          },
+          "output": {
+            "completion": "qq"
+          }
+        }
+      ],
+      "result": {
+        "completion": "qq"
+      },
+      "lastStepId": "b1f716c3-8de5-4f32-9b03-0e2e68bc12db"
+    }
+  },
+  {
+    "id": "c601d9aa-09c4-4e48-aad3-4411e5acd331",
+    "skillId": "bfb61e85-3358-44f8-8e77-9f31227d78d1",
+    "timestamp": "2025-05-26T10:50:42.820Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d5e06552-e45a-489e-85de-19753effb5d1",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "e3c02db6-5b6b-410f-854f-92ef3441a1e7",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "ПРИМЕР СТРОКИ"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "d266bfc2-bf13-479b-ab76-d9e38827b99d",
+          "name": "Проверка длины",
+          "input": {
+            "text": "ПРИМЕР СТРОКИ"
+          },
+          "output": {
+            "isLong": true
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "d3c1554f-6613-40e5-aef2-ac1d651e43f8",
+          "name": "Условие",
+          "input": {
+            "flag": true
+          },
+          "output": {
+            "onTrue": "Текст длинный"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "b1f716c3-8de5-4f32-9b03-0e2e68bc12db",
+          "name": "llm",
+          "input": {
+            "prompt": "Текст длинный"
+          },
+          "output": {
+            "completion": "qq"
+          }
+        }
+      ],
+      "result": {
+        "completion": "qq"
+      },
+      "lastStepId": "b1f716c3-8de5-4f32-9b03-0e2e68bc12db"
+    }
+  },
+  {
+    "id": "72e54c9f-0d15-4cac-b8b5-9dbece606e2a",
+    "skillId": "bfb61e85-3358-44f8-8e77-9f31227d78d1",
+    "timestamp": "2025-05-26T10:51:23.172Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d5e06552-e45a-489e-85de-19753effb5d1",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "e3c02db6-5b6b-410f-854f-92ef3441a1e7",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "ПРИМЕР СТРОКИ"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "d266bfc2-bf13-479b-ab76-d9e38827b99d",
+          "name": "Проверка длины",
+          "input": {
+            "text": "ПРИМЕР СТРОКИ"
+          },
+          "output": {
+            "isLong": true
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "d3c1554f-6613-40e5-aef2-ac1d651e43f8",
+          "name": "Условие",
+          "input": {
+            "flag": true
+          },
+          "output": {
+            "onTrue": "Текст длинный"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "b1f716c3-8de5-4f32-9b03-0e2e68bc12db",
+          "name": "llm",
+          "input": {
+            "prompt": "Текст длинный"
+          },
+          "output": {
+            "completion": "qq"
+          }
+        }
+      ],
+      "result": {
+        "completion": "qq"
+      },
+      "lastStepId": "b1f716c3-8de5-4f32-9b03-0e2e68bc12db"
+    }
+  },
+  {
+    "id": "138d9613-509a-4ac8-9f0b-59dbf6ec097e",
+    "skillId": "bfb61e85-3358-44f8-8e77-9f31227d78d1",
+    "timestamp": "2025-05-26T10:52:42.772Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d5e06552-e45a-489e-85de-19753effb5d1",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "e3c02db6-5b6b-410f-854f-92ef3441a1e7",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "ПРИМЕР СТРОКИ"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "d266bfc2-bf13-479b-ab76-d9e38827b99d",
+          "name": "Проверка длины",
+          "input": {
+            "text": "ПРИМЕР СТРОКИ"
+          },
+          "output": {
+            "isLong": true
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "d3c1554f-6613-40e5-aef2-ac1d651e43f8",
+          "name": "Условие",
+          "input": {
+            "flag": true
+          },
+          "output": {
+            "onTrue": "Текст длинный"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "b1f716c3-8de5-4f32-9b03-0e2e68bc12db",
+          "name": "llm",
+          "input": {
+            "prompt": "Текст длинный"
+          },
+          "output": {
+            "completion": "qq"
+          }
+        }
+      ],
+      "result": {
+        "completion": "qq"
+      },
+      "lastStepId": "b1f716c3-8de5-4f32-9b03-0e2e68bc12db"
+    }
+  },
+  {
+    "id": "5f5bad55-66d0-4c89-85e1-7b28b7d0626a",
+    "skillId": "bfb61e85-3358-44f8-8e77-9f31227d78d1",
+    "timestamp": "2025-05-26T10:53:41.671Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d5e06552-e45a-489e-85de-19753effb5d1",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "e3c02db6-5b6b-410f-854f-92ef3441a1e7",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "ПРИМЕР СТРОКИ"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "d266bfc2-bf13-479b-ab76-d9e38827b99d",
+          "name": "Проверка длины",
+          "input": {
+            "text": "ПРИМЕР СТРОКИ"
+          },
+          "output": {
+            "isLong": true
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "d3c1554f-6613-40e5-aef2-ac1d651e43f8",
+          "name": "Условие",
+          "input": {
+            "flag": true
+          },
+          "output": {
+            "onTrue": "Текст длинный"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "b1f716c3-8de5-4f32-9b03-0e2e68bc12db",
+          "name": "llm",
+          "input": {
+            "prompt": "Текст длинный"
+          },
+          "output": {},
+          "error": "Unexpected token 'if'"
+        }
+      ],
+      "result": {},
+      "lastStepId": "d3c1554f-6613-40e5-aef2-ac1d651e43f8",
+      "error": "Unexpected token 'if'"
+    }
+  },
+  {
+    "id": "73c74c9f-600f-43a0-997d-85f4153553aa",
+    "skillId": "bfb61e85-3358-44f8-8e77-9f31227d78d1",
+    "timestamp": "2025-05-26T10:53:55.123Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d5e06552-e45a-489e-85de-19753effb5d1",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "e3c02db6-5b6b-410f-854f-92ef3441a1e7",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "ПРИМЕР СТРОКИ"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "d266bfc2-bf13-479b-ab76-d9e38827b99d",
+          "name": "Проверка длины",
+          "input": {
+            "text": "ПРИМЕР СТРОКИ"
+          },
+          "output": {
+            "isLong": true
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "d3c1554f-6613-40e5-aef2-ac1d651e43f8",
+          "name": "Условие",
+          "input": {
+            "flag": true
+          },
+          "output": {
+            "onTrue": "Текст длинный"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "b1f716c3-8de5-4f32-9b03-0e2e68bc12db",
+          "name": "llm",
+          "input": {
+            "prompt": "Текст длинный"
+          },
+          "output": {},
+          "error": "Error: You didn't provide an API key. You need to provide your API key in an Authorization header using Bearer auth (i.e. Authorization: Bearer YOUR_KEY), or as the password field (with blank username) if you're accessing the API from your browser and are prompted for a username and password. You can obtain an API key from https://platform.openai.com/account/api-keys."
+        }
+      ],
+      "result": {},
+      "lastStepId": "d3c1554f-6613-40e5-aef2-ac1d651e43f8",
+      "error": "Error: You didn't provide an API key. You need to provide your API key in an Authorization header using Bearer auth (i.e. Authorization: Bearer YOUR_KEY), or as the password field (with blank username) if you're accessing the API from your browser and are prompted for a username and password. You can obtain an API key from https://platform.openai.com/account/api-keys."
+    }
+  },
+  {
+    "id": "ad87507a-d491-4aec-85cb-d6a2b53a8680",
+    "skillId": "bfb61e85-3358-44f8-8e77-9f31227d78d1",
+    "timestamp": "2025-05-26T10:55:18.170Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d5e06552-e45a-489e-85de-19753effb5d1",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "e3c02db6-5b6b-410f-854f-92ef3441a1e7",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "ПРИМЕР СТРОКИ"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "d266bfc2-bf13-479b-ab76-d9e38827b99d",
+          "name": "Проверка длины",
+          "input": {
+            "text": "ПРИМЕР СТРОКИ"
+          },
+          "output": {
+            "isLong": true
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "d3c1554f-6613-40e5-aef2-ac1d651e43f8",
+          "name": "Условие",
+          "input": {
+            "flag": true
+          },
+          "output": {
+            "onTrue": "Текст длинный"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "b1f716c3-8de5-4f32-9b03-0e2e68bc12db",
+          "name": "llm",
+          "input": {
+            "prompt": "Текст длинный"
+          },
+          "output": {},
+          "error": "Error: You didn't provide an API key. You need to provide your API key in an Authorization header using Bearer auth (i.e. Authorization: Bearer YOUR_KEY), or as the password field (with blank username) if you're accessing the API from your browser and are prompted for a username and password. You can obtain an API key from https://platform.openai.com/account/api-keys."
+        }
+      ],
+      "result": {},
+      "lastStepId": "d3c1554f-6613-40e5-aef2-ac1d651e43f8",
+      "error": "Error: You didn't provide an API key. You need to provide your API key in an Authorization header using Bearer auth (i.e. Authorization: Bearer YOUR_KEY), or as the password field (with blank username) if you're accessing the API from your browser and are prompted for a username and password. You can obtain an API key from https://platform.openai.com/account/api-keys."
+    }
+  },
+  {
+    "id": "ad37ea2b-c587-4ef6-84e9-31276147c30c",
+    "skillId": "bfb61e85-3358-44f8-8e77-9f31227d78d1",
+    "timestamp": "2025-05-26T10:55:58.160Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d5e06552-e45a-489e-85de-19753effb5d1",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "e3c02db6-5b6b-410f-854f-92ef3441a1e7",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "ПРИМЕР СТРОКИ"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "d266bfc2-bf13-479b-ab76-d9e38827b99d",
+          "name": "Проверка длины",
+          "input": {
+            "text": "ПРИМЕР СТРОКИ"
+          },
+          "output": {
+            "isLong": true
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "d3c1554f-6613-40e5-aef2-ac1d651e43f8",
+          "name": "Условие",
+          "input": {
+            "flag": true
+          },
+          "output": {
+            "onTrue": "Текст длинный"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "b1f716c3-8de5-4f32-9b03-0e2e68bc12db",
+          "name": "llm",
+          "input": {
+            "prompt": "Текст длинный"
+          },
+          "output": {
+            "completion": "и содержит много разнообразной информации. В нем может быть описано какое-то событие, рассказано о чьей-то жизни или просто изложены размышления на какую-то тему. Длина текста может варьироваться в зависимости от его цели и задачи - от нескольких предложений до нескольких страниц.\n\nВ тексте могут быть использованы различные стили и жанры - художественный, научный, публицистический и т.д. Также он может включать в себя различные элементы - диалоги, описание, размышления, анализ и т.д.\n\nЧитая длинный текст, человек может узнать много нового и интересного, расширить свои знания, получить новые идеи и вдохновение. Тексты являются важным источником информации и помогают людям лучше понимать себя, других и мир вокруг."
+          }
+        }
+      ],
+      "result": {
+        "completion": "и содержит много разнообразной информации. В нем может быть описано какое-то событие, рассказано о чьей-то жизни или просто изложены размышления на какую-то тему. Длина текста может варьироваться в зависимости от его цели и задачи - от нескольких предложений до нескольких страниц.\n\nВ тексте могут быть использованы различные стили и жанры - художественный, научный, публицистический и т.д. Также он может включать в себя различные элементы - диалоги, описание, размышления, анализ и т.д.\n\nЧитая длинный текст, человек может узнать много нового и интересного, расширить свои знания, получить новые идеи и вдохновение. Тексты являются важным источником информации и помогают людям лучше понимать себя, других и мир вокруг."
+      },
+      "lastStepId": "b1f716c3-8de5-4f32-9b03-0e2e68bc12db"
+    }
+  },
+  {
+    "id": "1cbfe616-171d-4884-ad1c-81263039d166",
+    "skillId": "dc161f06-6165-4c78-87f6-9e109166a5c8",
+    "timestamp": "2025-05-26T11:26:28.692Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "e1f312b2-a33c-4671-b126-82d202b19b41",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "e2238f39-7fae-4287-b143-4357eb6e72bc",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "ПРИМЕР СТРОКИ"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "6a60a16d-773d-4d88-b4ef-2ae90b1f7572",
+          "name": "Проверка длины",
+          "input": {
+            "text": "ПРИМЕР СТРОКИ"
+          },
+          "output": {
+            "isLong": true
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "e3375c9b-cfdc-41e0-8f43-359e4a0ef066",
+          "name": "Условие",
+          "input": {
+            "flag": true
+          },
+          "output": {
+            "onTrue": "Текст длинный"
+          }
+        }
+      ],
+      "result": {
+        "onTrue": "Текст длинный"
+      },
+      "lastStepId": "e3375c9b-cfdc-41e0-8f43-359e4a0ef066"
+    }
+  },
+  {
+    "id": "94eadca4-c8ec-415b-b8e8-087a497b41d9",
+    "skillId": "dc161f06-6165-4c78-87f6-9e109166a5c8",
+    "timestamp": "2025-05-26T11:26:52.504Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "e1f312b2-a33c-4671-b126-82d202b19b41",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "e2238f39-7fae-4287-b143-4357eb6e72bc",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "ПРИМЕР СТРОКИ"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "6a60a16d-773d-4d88-b4ef-2ae90b1f7572",
+          "name": "Проверка длины",
+          "input": {
+            "text": "ПРИМЕР СТРОКИ"
+          },
+          "output": {
+            "isLong": true
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "e3375c9b-cfdc-41e0-8f43-359e4a0ef066",
+          "name": "Условие",
+          "input": {
+            "flag": true
+          },
+          "output": {
+            "onTrue": "Текст длинный"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "b4c02099-f769-4c46-85b6-8acadee1308d",
+          "name": "llm",
+          "input": {
+            "prompt": "Текст длинный"
+          },
+          "output": {},
+          "error": "Invalid or unexpected token"
+        }
+      ],
+      "result": {},
+      "lastStepId": "e3375c9b-cfdc-41e0-8f43-359e4a0ef066",
+      "error": "Invalid or unexpected token"
+    }
+  },
+  {
+    "id": "a70a9a1c-1d17-47f7-8095-9a74bbefc993",
+    "skillId": "af9432fd-0f22-4050-bb66-d0f4939da4c9",
+    "timestamp": "2025-05-26T11:29:19.802Z",
+    "context": {
+      "input": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "e3dd5c42-5077-48fa-8df0-15ff46a457bc",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {},
+          "error": "Validation failed for input 'text': [{\"instancePath\":\"\",\"schemaPath\":\"#/type\",\"keyword\":\"type\",\"params\":{\"type\":\"string\"},\"message\":\"must be string\"}]"
+        }
+      ],
+      "result": {},
+      "lastStepId": "e3dd5c42-5077-48fa-8df0-15ff46a457bc",
+      "error": "Validation failed for input 'text': [{\"instancePath\":\"\",\"schemaPath\":\"#/type\",\"keyword\":\"type\",\"params\":{\"type\":\"string\"},\"message\":\"must be string\"}]"
+    }
+  },
+  {
+    "id": "074531e2-4785-4db4-8906-2b1bf61ee4d9",
+    "skillId": "af9432fd-0f22-4050-bb66-d0f4939da4c9",
+    "timestamp": "2025-05-26T11:29:32.845Z",
+    "context": {
+      "text": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "e3dd5c42-5077-48fa-8df0-15ff46a457bc",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {},
+          "error": "Validation failed for input 'text': [{\"instancePath\":\"\",\"schemaPath\":\"#/type\",\"keyword\":\"type\",\"params\":{\"type\":\"string\"},\"message\":\"must be string\"}]"
+        }
+      ],
+      "result": {},
+      "lastStepId": "e3dd5c42-5077-48fa-8df0-15ff46a457bc",
+      "error": "Validation failed for input 'text': [{\"instancePath\":\"\",\"schemaPath\":\"#/type\",\"keyword\":\"type\",\"params\":{\"type\":\"string\"},\"message\":\"must be string\"}]"
+    }
+  },
+  {
+    "id": "9b782a15-3a94-4568-8f75-9ef32253e2fd",
+    "skillId": "dca5d6a2-834a-415e-a33d-aee23b27440c",
+    "timestamp": "2025-05-26T11:31:30.860Z",
+    "context": {
+      "text": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "904dbbcf-3d49-48c2-b9b3-7e1ecaba0fa5",
+          "name": "Ввод текста",
+          "input": {},
+          "output": {},
+          "error": "Validation failed for input 'text': [{\"instancePath\":\"\",\"schemaPath\":\"#/type\",\"keyword\":\"type\",\"params\":{\"type\":\"string\"},\"message\":\"must be string\"}]"
+        }
+      ],
+      "result": {},
+      "lastStepId": "904dbbcf-3d49-48c2-b9b3-7e1ecaba0fa5",
+      "error": "Validation failed for input 'text': [{\"instancePath\":\"\",\"schemaPath\":\"#/type\",\"keyword\":\"type\",\"params\":{\"type\":\"string\"},\"message\":\"must be string\"}]"
+    }
+  },
+  {
+    "id": "fe33685c-7cd1-476b-b811-337ad80b85d3",
+    "skillId": "d5d8611a-4892-49b1-891d-41bda012f57f",
+    "timestamp": "2025-05-26T11:34:41.603Z",
+    "context": {
+      "text": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "20603550-1ae8-497a-b77a-444d65683fcb",
+          "name": "Ввод текста",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "9c937d7d-3b9d-4a1e-81ff-53b637b243a1",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "JOPA"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "40df04f6-975d-4672-8b3c-5eb8c41418f5",
+          "name": "Проверка длины",
+          "input": {
+            "text": "JOPA"
+          },
+          "output": {
+            "isLong": false
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "24380a14-ca57-4afc-a50b-0246fd15816f",
+          "name": "Условие",
+          "input": {
+            "flag": false
+          },
+          "output": {
+            "onFalse": "Текст короткий"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "b8967c09-fdb7-4032-b9e8-5d13aae15965",
+          "name": "llm",
+          "input": {
+            "prompt": "Текст короткий"
+          },
+          "output": {},
+          "error": "Invalid or unexpected token"
+        }
+      ],
+      "result": {},
+      "lastStepId": "24380a14-ca57-4afc-a50b-0246fd15816f",
+      "error": "Invalid or unexpected token"
+    }
+  },
+  {
+    "id": "47496d3e-b15f-499e-b1c5-ec8a29a8a80b",
+    "skillId": "d5d8611a-4892-49b1-891d-41bda012f57f",
+    "timestamp": "2025-05-26T11:35:24.835Z",
+    "context": {
+      "text": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "20603550-1ae8-497a-b77a-444d65683fcb",
+          "name": "Ввод текста",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "9c937d7d-3b9d-4a1e-81ff-53b637b243a1",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "JOPA"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "40df04f6-975d-4672-8b3c-5eb8c41418f5",
+          "name": "Проверка длины",
+          "input": {
+            "text": "JOPA"
+          },
+          "output": {
+            "isLong": false
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "24380a14-ca57-4afc-a50b-0246fd15816f",
+          "name": "Условие",
+          "input": {
+            "flag": false
+          },
+          "output": {
+            "onFalse": "Текст короткий"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "b8967c09-fdb7-4032-b9e8-5d13aae15965",
+          "name": "llm",
+          "input": {
+            "prompt": "Текст короткий"
+          },
+          "output": {},
+          "error": "Invalid or unexpected token"
+        }
+      ],
+      "result": {},
+      "lastStepId": "24380a14-ca57-4afc-a50b-0246fd15816f",
+      "error": "Invalid or unexpected token"
+    }
+  },
+  {
+    "id": "6a9ba98c-5f9e-4029-87e8-aa977e8c4a29",
+    "skillId": "d5d8611a-4892-49b1-891d-41bda012f57f",
+    "timestamp": "2025-05-26T11:37:26.964Z",
+    "context": {
+      "text": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "20603550-1ae8-497a-b77a-444d65683fcb",
+          "name": "Ввод текста",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "9c937d7d-3b9d-4a1e-81ff-53b637b243a1",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "JOPA"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "40df04f6-975d-4672-8b3c-5eb8c41418f5",
+          "name": "Проверка длины",
+          "input": {
+            "text": "JOPA"
+          },
+          "output": {
+            "isLong": false
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "24380a14-ca57-4afc-a50b-0246fd15816f",
+          "name": "Условие",
+          "input": {
+            "flag": false
+          },
+          "output": {
+            "onFalse": "Текст короткий"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "b8967c09-fdb7-4032-b9e8-5d13aae15965",
+          "name": "llm",
+          "input": {
+            "prompt": "Текст короткий"
+          },
+          "output": {},
+          "error": "Invalid or unexpected token"
+        }
+      ],
+      "result": {},
+      "lastStepId": "24380a14-ca57-4afc-a50b-0246fd15816f",
+      "error": "Invalid or unexpected token"
+    }
+  },
+  {
+    "id": "27151dc7-8fbc-4a0e-bde0-596271550ebd",
+    "skillId": "d5d8611a-4892-49b1-891d-41bda012f57f",
+    "timestamp": "2025-05-26T11:38:30.449Z",
+    "context": {
+      "text": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "20603550-1ae8-497a-b77a-444d65683fcb",
+          "name": "Ввод текста",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "9c937d7d-3b9d-4a1e-81ff-53b637b243a1",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "JOPA"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "40df04f6-975d-4672-8b3c-5eb8c41418f5",
+          "name": "Проверка длины",
+          "input": {
+            "text": "JOPA"
+          },
+          "output": {
+            "isLong": false
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "24380a14-ca57-4afc-a50b-0246fd15816f",
+          "name": "Условие",
+          "input": {
+            "flag": false
+          },
+          "output": {
+            "onFalse": "Текст короткий"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "b8967c09-fdb7-4032-b9e8-5d13aae15965",
+          "name": "llm",
+          "input": {
+            "prompt": "Текст короткий"
+          },
+          "output": {},
+          "error": "Invalid or unexpected token"
+        }
+      ],
+      "result": {},
+      "lastStepId": "24380a14-ca57-4afc-a50b-0246fd15816f",
+      "error": "Invalid or unexpected token"
+    }
+  },
+  {
+    "id": "1f06484c-c969-4ca3-aa26-d142e19c23e3",
+    "skillId": "d5d8611a-4892-49b1-891d-41bda012f57f",
+    "timestamp": "2025-05-26T11:41:52.099Z",
+    "context": {
+      "text": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "20603550-1ae8-497a-b77a-444d65683fcb",
+          "name": "Ввод текста",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "9c937d7d-3b9d-4a1e-81ff-53b637b243a1",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "JOPA"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "40df04f6-975d-4672-8b3c-5eb8c41418f5",
+          "name": "Проверка длины",
+          "input": {
+            "text": "JOPA"
+          },
+          "output": {
+            "isLong": false
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "24380a14-ca57-4afc-a50b-0246fd15816f",
+          "name": "Условие",
+          "input": {
+            "flag": false
+          },
+          "output": {
+            "onFalse": "Текст короткий"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "b8967c09-fdb7-4032-b9e8-5d13aae15965",
+          "name": "llm",
+          "input": {
+            "prompt": "Текст короткий"
+          },
+          "output": {},
+          "error": "Invalid or unexpected token"
+        }
+      ],
+      "result": {},
+      "lastStepId": "24380a14-ca57-4afc-a50b-0246fd15816f",
+      "error": "Invalid or unexpected token"
+    }
+  },
+  {
+    "id": "5e3fd40a-8fa6-474a-8d64-0664be0c582a",
+    "skillId": "d5d8611a-4892-49b1-891d-41bda012f57f",
+    "timestamp": "2025-05-26T11:42:19.800Z",
+    "context": {
+      "text": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "20603550-1ae8-497a-b77a-444d65683fcb",
+          "name": "Ввод текста",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "9c937d7d-3b9d-4a1e-81ff-53b637b243a1",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "JOPA"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "40df04f6-975d-4672-8b3c-5eb8c41418f5",
+          "name": "Проверка длины",
+          "input": {
+            "text": "JOPA"
+          },
+          "output": {
+            "isLong": false
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "24380a14-ca57-4afc-a50b-0246fd15816f",
+          "name": "Условие",
+          "input": {
+            "flag": false
+          },
+          "output": {
+            "onFalse": "Текст короткий"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "b8967c09-fdb7-4032-b9e8-5d13aae15965",
+          "name": "llm",
+          "input": {
+            "prompt": "Текст короткий"
+          },
+          "output": {},
+          "error": "Invalid or unexpected token"
+        }
+      ],
+      "result": {},
+      "lastStepId": "24380a14-ca57-4afc-a50b-0246fd15816f",
+      "error": "Invalid or unexpected token"
+    }
+  },
+  {
+    "id": "ce7755a8-1a60-4c93-9bf1-d3f76ed74352",
+    "skillId": "d5d8611a-4892-49b1-891d-41bda012f57f",
+    "timestamp": "2025-05-26T11:44:03.068Z",
+    "context": {
+      "text": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "20603550-1ae8-497a-b77a-444d65683fcb",
+          "name": "Ввод текста",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "9c937d7d-3b9d-4a1e-81ff-53b637b243a1",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "JOPA"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "40df04f6-975d-4672-8b3c-5eb8c41418f5",
+          "name": "Проверка длины",
+          "input": {
+            "text": "JOPA"
+          },
+          "output": {
+            "isLong": false
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "24380a14-ca57-4afc-a50b-0246fd15816f",
+          "name": "Условие",
+          "input": {
+            "flag": false
+          },
+          "output": {
+            "onFalse": "Текст короткий"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "b8967c09-fdb7-4032-b9e8-5d13aae15965",
+          "name": "llm",
+          "input": {
+            "prompt": "Текст короткий"
+          },
+          "output": {},
+          "error": "Invalid or unexpected token"
+        }
+      ],
+      "result": {},
+      "lastStepId": "24380a14-ca57-4afc-a50b-0246fd15816f",
+      "error": "Invalid or unexpected token"
+    }
+  },
+  {
+    "id": "be43af27-41c5-4306-8830-42723be1c130",
+    "skillId": "d5d8611a-4892-49b1-891d-41bda012f57f",
+    "timestamp": "2025-05-26T11:45:02.046Z",
+    "context": {
+      "text": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "20603550-1ae8-497a-b77a-444d65683fcb",
+          "name": "Ввод текста",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "9c937d7d-3b9d-4a1e-81ff-53b637b243a1",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "JOPA"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "40df04f6-975d-4672-8b3c-5eb8c41418f5",
+          "name": "Проверка длины",
+          "input": {
+            "text": "JOPA"
+          },
+          "output": {
+            "isLong": false
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "24380a14-ca57-4afc-a50b-0246fd15816f",
+          "name": "Условие",
+          "input": {
+            "flag": false
+          },
+          "output": {
+            "onFalse": "Текст короткий"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "b8967c09-fdb7-4032-b9e8-5d13aae15965",
+          "name": "llm",
+          "input": {
+            "prompt": "Текст короткий"
+          },
+          "output": {},
+          "error": "Invalid or unexpected token"
+        }
+      ],
+      "result": {},
+      "lastStepId": "24380a14-ca57-4afc-a50b-0246fd15816f",
+      "error": "Invalid or unexpected token"
+    }
+  },
+  {
+    "id": "9b4ed3fd-91b4-4ac7-984b-abab117884c8",
+    "skillId": "d5d8611a-4892-49b1-891d-41bda012f57f",
+    "timestamp": "2025-05-26T11:45:50.274Z",
+    "context": {
+      "text": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "20603550-1ae8-497a-b77a-444d65683fcb",
+          "name": "Ввод текста",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "9c937d7d-3b9d-4a1e-81ff-53b637b243a1",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "JOPA"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "40df04f6-975d-4672-8b3c-5eb8c41418f5",
+          "name": "Проверка длины",
+          "input": {
+            "text": "JOPA"
+          },
+          "output": {
+            "isLong": false
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "24380a14-ca57-4afc-a50b-0246fd15816f",
+          "name": "Условие",
+          "input": {
+            "flag": false
+          },
+          "output": {
+            "onFalse": "Текст короткий"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "b8967c09-fdb7-4032-b9e8-5d13aae15965",
+          "name": "llm",
+          "input": {
+            "prompt": "Текст короткий"
+          },
+          "output": {},
+          "error": "Invalid or unexpected token"
+        }
+      ],
+      "result": {},
+      "lastStepId": "24380a14-ca57-4afc-a50b-0246fd15816f",
+      "error": "Invalid or unexpected token"
+    }
+  },
+  {
+    "id": "d7586dc7-64ba-4e1a-9ff5-c11cb61815df",
+    "skillId": "d5d8611a-4892-49b1-891d-41bda012f57f",
+    "timestamp": "2025-05-26T11:47:34.724Z",
+    "context": {
+      "text": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "20603550-1ae8-497a-b77a-444d65683fcb",
+          "name": "Ввод текста",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "9c937d7d-3b9d-4a1e-81ff-53b637b243a1",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "JOPA"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "40df04f6-975d-4672-8b3c-5eb8c41418f5",
+          "name": "Проверка длины",
+          "input": {
+            "text": "JOPA"
+          },
+          "output": {
+            "isLong": false
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "24380a14-ca57-4afc-a50b-0246fd15816f",
+          "name": "Условие",
+          "input": {
+            "flag": false
+          },
+          "output": {
+            "onFalse": "Текст короткий"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "b8967c09-fdb7-4032-b9e8-5d13aae15965",
+          "name": "llm",
+          "input": {
+            "prompt": "Текст короткий"
+          },
+          "output": {
+            "completion": "Короткий текст - это текст, который содержит минимальное количество слов и информации. Он часто используется для краткого изложения и передачи основной мысли или идеи. Работая с текстом, важно уметь выделять ключевую информацию и формулировать ее кратко и ясно."
+          }
+        }
+      ],
+      "result": {
+        "completion": "Короткий текст - это текст, который содержит минимальное количество слов и информации. Он часто используется для краткого изложения и передачи основной мысли или идеи. Работая с текстом, важно уметь выделять ключевую информацию и формулировать ее кратко и ясно."
+      },
+      "lastStepId": "b8967c09-fdb7-4032-b9e8-5d13aae15965"
+    }
+  },
+  {
+    "id": "e6377bea-4203-4f9a-a0b1-cc7ecd083513",
+    "skillId": "d5d8611a-4892-49b1-891d-41bda012f57f",
+    "timestamp": "2025-05-26T11:49:37.488Z",
+    "context": {
+      "text": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "20603550-1ae8-497a-b77a-444d65683fcb",
+          "name": "Ввод текста",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "9c937d7d-3b9d-4a1e-81ff-53b637b243a1",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "JOPA"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "40df04f6-975d-4672-8b3c-5eb8c41418f5",
+          "name": "Проверка длины",
+          "input": {
+            "text": "JOPA"
+          },
+          "output": {
+            "isLong": false
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "24380a14-ca57-4afc-a50b-0246fd15816f",
+          "name": "Условие",
+          "input": {
+            "flag": false
+          },
+          "output": {
+            "onFalse": "Текст короткий"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "b8967c09-fdb7-4032-b9e8-5d13aae15965",
+          "name": "llm",
+          "input": {
+            "prompt": "Текст короткий"
+          },
+          "output": {
+            "completion": ", но информативный."
+          }
+        }
+      ],
+      "result": {
+        "completion": ", но информативный."
+      },
+      "lastStepId": "b8967c09-fdb7-4032-b9e8-5d13aae15965"
+    }
+  },
+  {
+    "id": "b4d61a96-2dc6-495f-83f0-741dc0d0ca8e",
+    "skillId": "d5d8611a-4892-49b1-891d-41bda012f57f",
+    "timestamp": "2025-05-26T11:58:07.117Z",
+    "context": {
+      "text": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "20603550-1ae8-497a-b77a-444d65683fcb",
+          "name": "Ввод текста",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "9c937d7d-3b9d-4a1e-81ff-53b637b243a1",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "JOPA"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "40df04f6-975d-4672-8b3c-5eb8c41418f5",
+          "name": "Проверка длины",
+          "input": {
+            "text": "JOPA"
+          },
+          "output": {
+            "isLong": false
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "24380a14-ca57-4afc-a50b-0246fd15816f",
+          "name": "Условие",
+          "input": {
+            "flag": false
+          },
+          "output": {
+            "onFalse": "Текст короткий"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "b8967c09-fdb7-4032-b9e8-5d13aae15965",
+          "name": "llm",
+          "input": {
+            "prompt": "Текст короткий"
+          },
+          "output": {
+            "completion": "Конечно, какой-то конкретный вопрос есть? Чем могу помочь?"
+          }
+        }
+      ],
+      "result": {
+        "completion": "Конечно, какой-то конкретный вопрос есть? Чем могу помочь?"
+      },
+      "lastStepId": "b8967c09-fdb7-4032-b9e8-5d13aae15965"
+    }
+  },
+  {
+    "id": "7e35ed7e-fe9c-4a30-bfcf-cad3f20e47f2",
+    "skillId": "d5d8611a-4892-49b1-891d-41bda012f57f",
+    "timestamp": "2025-05-26T12:03:18.384Z",
+    "context": {
+      "text": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "20603550-1ae8-497a-b77a-444d65683fcb",
+          "name": "Ввод текста",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "text": "jopa"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "9c937d7d-3b9d-4a1e-81ff-53b637b243a1",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "upperText": "JOPA"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "40df04f6-975d-4672-8b3c-5eb8c41418f5",
+          "name": "Проверка длины",
+          "input": {
+            "text": "JOPA"
+          },
+          "output": {
+            "isLong": false
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "24380a14-ca57-4afc-a50b-0246fd15816f",
+          "name": "Условие",
+          "input": {
+            "flag": false
+          },
+          "output": {
+            "onFalse": "Текст короткий"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "b8967c09-fdb7-4032-b9e8-5d13aae15965",
+          "name": "llm",
+          "input": {
+            "prompt": "Текст короткий"
+          },
+          "output": {
+            "completion": "Очень хорошо, что вы меня позвали."
+          }
+        }
+      ],
+      "result": {
+        "completion": "Очень хорошо, что вы меня позвали."
+      },
+      "lastStepId": "b8967c09-fdb7-4032-b9e8-5d13aae15965"
+    }
+  },
+  {
+    "id": "c98c4b29-a5d4-4762-8b14-abbad541e0d3",
+    "skillId": "d5d8611a-4892-49b1-891d-41bda012f57f",
+    "timestamp": "2025-05-26T12:05:35.135Z",
+    "context": {
+      "text": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "20603550-1ae8-497a-b77a-444d65683fcb",
+          "name": "Ввод текста",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "text": "jopa"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "9c937d7d-3b9d-4a1e-81ff-53b637b243a1",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "upperText": "JOPA"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "40df04f6-975d-4672-8b3c-5eb8c41418f5",
+          "name": "Проверка длины",
+          "input": {
+            "text": "JOPA"
+          },
+          "output": {
+            "isLong": false
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "24380a14-ca57-4afc-a50b-0246fd15816f",
+          "name": "Условие",
+          "input": {
+            "flag": false
+          },
+          "output": {
+            "onFalse": "Текст короткий"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "b8967c09-fdb7-4032-b9e8-5d13aae15965",
+          "name": "llm",
+          "input": {
+            "prompt": "Текст короткий"
+          },
+          "output": {
+            "completion": "Один день из жизни - это целая жизнь в миниатюре. Каждый момент имеет свое значение, каждое решение оказывает влияние на будущее. Не забывайте ценить каждую минуту и делать выборы осознанно."
+          }
+        }
+      ],
+      "result": {
+        "completion": "Один день из жизни - это целая жизнь в миниатюре. Каждый момент имеет свое значение, каждое решение оказывает влияние на будущее. Не забывайте ценить каждую минуту и делать выборы осознанно."
+      },
+      "lastStepId": "b8967c09-fdb7-4032-b9e8-5d13aae15965"
+    }
+  },
+  {
+    "id": "7013731f-f146-4ee4-bcae-5bbc54f62ef2",
+    "skillId": "d5d8611a-4892-49b1-891d-41bda012f57f",
+    "timestamp": "2025-05-27T05:33:22.096Z",
+    "context": {
+      "text": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "20603550-1ae8-497a-b77a-444d65683fcb",
+          "name": "Ввод текста",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "text": "jopa"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "9c937d7d-3b9d-4a1e-81ff-53b637b243a1",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "upperText": "JOPA"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "40df04f6-975d-4672-8b3c-5eb8c41418f5",
+          "name": "Проверка длины",
+          "input": {
+            "text": "JOPA"
+          },
+          "output": {
+            "isLong": false
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "24380a14-ca57-4afc-a50b-0246fd15816f",
+          "name": "Условие",
+          "input": {
+            "flag": false
+          },
+          "output": {
+            "onFalse": "Текст короткий"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "b8967c09-fdb7-4032-b9e8-5d13aae15965",
+          "name": "llm",
+          "input": {
+            "prompt": "Текст короткий"
+          },
+          "output": {
+            "completion": "Понятие короткого текста варьируется в зависимости от контекста, но обычно указывает на информацию, изложенную кратко и лаконично."
+          }
+        }
+      ],
+      "result": {
+        "completion": "Понятие короткого текста варьируется в зависимости от контекста, но обычно указывает на информацию, изложенную кратко и лаконично."
+      },
+      "lastStepId": "b8967c09-fdb7-4032-b9e8-5d13aae15965"
+    }
+  },
+  {
+    "id": "9c85c736-881a-4ecc-be77-14c9a0e7ab60",
+    "skillId": "d5d8611a-4892-49b1-891d-41bda012f57f",
+    "timestamp": "2025-05-27T09:46:45.982Z",
+    "context": {
+      "text": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "9c3433f5-7bd8-434c-852d-d4228438f181",
+          "name": "Ввод текста",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "aae85528-a77c-45f6-8c55-833f4af6a1d4",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "JOPA"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "68cf683c-5711-499c-949c-fade7bc5fc45",
+          "name": "Проверка длины",
+          "input": {
+            "text": "JOPA"
+          },
+          "output": {
+            "isLong": false
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "84e74c7e-7d15-436f-bde5-a88bc9248bc6",
+          "name": "Условие",
+          "input": {
+            "flag": false
+          },
+          "output": {
+            "onFalse": "Текст короткий"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "c133afbd-335e-4194-a5ff-8715ea5c7844",
+          "name": "LLM ответ",
+          "input": {
+            "prompt": "Текст короткий"
+          },
+          "output": {
+            "completion": "Короткий текст, созданный специально для демонстрации работы PeopleForecast.ai, аналитического искусственного интеллекта, способного генерировать качественный контент на любую тему."
+          }
+        }
+      ],
+      "result": {
+        "completion": "Короткий текст, созданный специально для демонстрации работы PeopleForecast.ai, аналитического искусственного интеллекта, способного генерировать качественный контент на любую тему."
+      },
+      "lastStepId": "c133afbd-335e-4194-a5ff-8715ea5c7844"
+    }
+  },
+  {
+    "id": "ff34553e-b442-4936-80f1-b9a7fe32fff7",
+    "skillId": "d5d8611a-4892-49b1-891d-41bda012f57f",
+    "timestamp": "2025-05-27T09:58:22.261Z",
+    "context": {
+      "text": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "9c3433f5-7bd8-434c-852d-d4228438f181",
+          "name": "Ввод текста",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "aae85528-a77c-45f6-8c55-833f4af6a1d4",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "JOPA"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "68cf683c-5711-499c-949c-fade7bc5fc45",
+          "name": "Проверка длины",
+          "input": {
+            "text": "JOPA"
+          },
+          "output": {
+            "isLong": false
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "84e74c7e-7d15-436f-bde5-a88bc9248bc6",
+          "name": "Условие",
+          "input": {
+            "flag": false
+          },
+          "output": {
+            "onFalse": "Текст короткий"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "c133afbd-335e-4194-a5ff-8715ea5c7844",
+          "name": "LLM ответ",
+          "input": {
+            "prompt": "Текст короткий"
+          },
+          "output": {
+            "completion": "Нужно больше информации, чтобы я мог предоставить подробный ответ. В чем именно вам нужна помощь или информация?"
+          }
+        }
+      ],
+      "result": {
+        "completion": "Нужно больше информации, чтобы я мог предоставить подробный ответ. В чем именно вам нужна помощь или информация?"
+      },
+      "lastStepId": "c133afbd-335e-4194-a5ff-8715ea5c7844"
+    }
+  },
+  {
+    "id": "6e28ccf7-0075-41f2-b5ee-61d2aeca1767",
+    "skillId": "d5d8611a-4892-49b1-891d-41bda012f57f",
+    "timestamp": "2025-05-27T10:00:53.975Z",
+    "context": {
+      "text": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "9c3433f5-7bd8-434c-852d-d4228438f181",
+          "name": "Ввод текста",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "aae85528-a77c-45f6-8c55-833f4af6a1d4",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "JOPA"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "68cf683c-5711-499c-949c-fade7bc5fc45",
+          "name": "Проверка длины",
+          "input": {
+            "text": "JOPA"
+          },
+          "output": {
+            "isLong": false
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "84e74c7e-7d15-436f-bde5-a88bc9248bc6",
+          "name": "Условие",
+          "input": {
+            "flag": false
+          },
+          "output": {},
+          "error": "No executor found for step type 'condition'"
+        }
+      ],
+      "result": {},
+      "lastStepId": "68cf683c-5711-499c-949c-fade7bc5fc45",
+      "error": "No executor found for step type 'condition'"
+    }
+  },
+  {
+    "id": "53ab4882-e6c2-48df-b27a-b9b85308d240",
+    "skillId": "d5d8611a-4892-49b1-891d-41bda012f57f",
+    "timestamp": "2025-05-27T10:05:01.517Z",
+    "context": {
+      "text": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "9c3433f5-7bd8-434c-852d-d4228438f181",
+          "name": "Ввод текста",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "aae85528-a77c-45f6-8c55-833f4af6a1d4",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "JOPA"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "68cf683c-5711-499c-949c-fade7bc5fc45",
+          "name": "Проверка длины",
+          "input": {
+            "text": "JOPA"
+          },
+          "output": {
+            "isLong": false
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "84e74c7e-7d15-436f-bde5-a88bc9248bc6",
+          "name": "Условие",
+          "input": {
+            "flag": false
+          },
+          "output": {}
+        }
+      ],
+      "result": {},
+      "lastStepId": "84e74c7e-7d15-436f-bde5-a88bc9248bc6"
+    }
+  },
+  {
+    "id": "d8a8d3dc-64c4-4a31-af38-69078f74ca3e",
+    "skillId": "d5d8611a-4892-49b1-891d-41bda012f57f",
+    "timestamp": "2025-05-27T10:07:44.518Z",
+    "context": {
+      "text": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "9c3433f5-7bd8-434c-852d-d4228438f181",
+          "name": "Ввод текста",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "aae85528-a77c-45f6-8c55-833f4af6a1d4",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "JOPA"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "68cf683c-5711-499c-949c-fade7bc5fc45",
+          "name": "Проверка длины",
+          "input": {
+            "text": "JOPA"
+          },
+          "output": {
+            "isLong": false
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "84e74c7e-7d15-436f-bde5-a88bc9248bc6",
+          "name": "Условие",
+          "input": {
+            "flag": false
+          },
+          "output": {
+            "onFalse": "Текст короткий"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "c133afbd-335e-4194-a5ff-8715ea5c7844",
+          "name": "LLM ответ",
+          "input": {
+            "prompt": "Текст короткий"
+          },
+          "output": {
+            "completion": "Конечно, в чем я могу вам помочь?"
+          }
+        }
+      ],
+      "result": {
+        "completion": "Конечно, в чем я могу вам помочь?"
+      },
+      "lastStepId": "c133afbd-335e-4194-a5ff-8715ea5c7844"
+    }
+  },
+  {
+    "id": "c1e38587-3011-4b70-9995-723ac617925c",
+    "skillId": "d5d8611a-4892-49b1-891d-41bda012f57f",
+    "timestamp": "2025-05-27T10:07:46.010Z",
+    "context": {
+      "text": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "9c3433f5-7bd8-434c-852d-d4228438f181",
+          "name": "Ввод текста",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "aae85528-a77c-45f6-8c55-833f4af6a1d4",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "JOPA"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "68cf683c-5711-499c-949c-fade7bc5fc45",
+          "name": "Проверка длины",
+          "input": {
+            "text": "JOPA"
+          },
+          "output": {
+            "isLong": false
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "84e74c7e-7d15-436f-bde5-a88bc9248bc6",
+          "name": "Условие",
+          "input": {
+            "flag": false
+          },
+          "output": {
+            "onFalse": "Текст короткий"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "c133afbd-335e-4194-a5ff-8715ea5c7844",
+          "name": "LLM ответ",
+          "input": {
+            "prompt": "Текст короткий"
+          },
+          "output": {
+            "completion": "Чем короче, тем лучше!"
+          }
+        }
+      ],
+      "result": {
+        "completion": "Чем короче, тем лучше!"
+      },
+      "lastStepId": "c133afbd-335e-4194-a5ff-8715ea5c7844"
+    }
+  },
+  {
+    "id": "993d5a1c-9cf1-4f17-978d-8c2475213de1",
+    "skillId": "d5d8611a-4892-49b1-891d-41bda012f57f",
+    "timestamp": "2025-05-27T10:12:33.653Z",
+    "context": {
+      "text": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "39b3917b-ba29-424a-9e10-549e3a7aaf87",
+          "name": "Ввод текста",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "eba1ba05-7417-46e9-9f70-717fc3660c3a",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "JOPA"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "12cec16f-80ae-4854-9690-81d6ce6854e0",
+          "name": "Проверка длины",
+          "input": {
+            "text": "JOPA"
+          },
+          "output": {
+            "isLong": false
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "1b64a9b3-c449-4970-949a-3c0b668ecf8a",
+          "name": "Условие",
+          "input": {
+            "flag": false
+          },
+          "output": {
+            "onFalse": "Текст короткий"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "1642e8bc-0290-4477-b11c-c135273ec202",
+          "name": "LLM ответ",
+          "input": {
+            "prompt": "Текст короткий"
+          },
+          "output": {
+            "completion": "Ок, в чем конкретно нужна помощь?"
+          }
+        }
+      ],
+      "result": {
+        "completion": "Ок, в чем конкретно нужна помощь?"
+      },
+      "lastStepId": "1642e8bc-0290-4477-b11c-c135273ec202"
+    }
+  },
+  {
+    "id": "85403c60-064f-46d4-8015-4cae732b07dd",
+    "skillId": "d5d8611a-4892-49b1-891d-41bda012f57f",
+    "timestamp": "2025-05-27T10:21:06.782Z",
+    "context": {
+      "text": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "39b3917b-ba29-424a-9e10-549e3a7aaf87",
+          "name": "Ввод текста",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "text": "Пример строки"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "eba1ba05-7417-46e9-9f70-717fc3660c3a",
+          "name": "ToUpperCase",
+          "input": {
+            "text": "Пример строки"
+          },
+          "output": {
+            "upperText": "JOPA"
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "12cec16f-80ae-4854-9690-81d6ce6854e0",
+          "name": "Проверка длины",
+          "input": {
+            "text": "JOPA"
+          },
+          "output": {
+            "isLong": false
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "1b64a9b3-c449-4970-949a-3c0b668ecf8a",
+          "name": "Условие",
+          "input": {
+            "flag": false
+          },
+          "output": {
+            "onFalse": "Текст короткий"
+          }
+        },
+        {
+          "order": 4,
+          "stepId": "1642e8bc-0290-4477-b11c-c135273ec202",
+          "name": "LLM ответ",
+          "input": {
+            "prompt": "Текст короткий"
+          },
+          "output": {
+            "completion": "\nКонечно, какие-нибудь уточнения или дополнительная информация?"
+          }
+        }
+      ],
+      "result": {
+        "completion": "\nКонечно, какие-нибудь уточнения или дополнительная информация?"
+      },
+      "lastStepId": "1642e8bc-0290-4477-b11c-c135273ec202"
+    }
+  },
+  {
+    "id": "df14ce1b-795e-4e27-ad63-a7ea9ed11ef9",
+    "skillId": "d5d8611a-4892-49b1-891d-41bda012f57f",
+    "timestamp": "2025-05-27T10:23:19.286Z",
+    "context": {
+      "text": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d20acf9a-f856-447d-8321-04da08441223",
+          "name": "Ввод текста",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "text": "Пример"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "d20acf9a-f856-447d-8321-04da08441223",
+          "name": "Ввод текста",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {},
+          "error": "Type mismatch on link '195e6697-058b-49f3-a418-d1a9db9aa2f4': string → array"
+        }
+      ],
+      "result": {},
+      "lastStepId": "d20acf9a-f856-447d-8321-04da08441223",
+      "error": "Type mismatch on link '195e6697-058b-49f3-a418-d1a9db9aa2f4': string → array"
+    }
+  },
+  {
+    "id": "690907cb-2062-485a-94a9-5685e64909ff",
+    "skillId": "d5d8611a-4892-49b1-891d-41bda012f57f",
+    "timestamp": "2025-05-27T10:23:35.022Z",
+    "context": {
+      "text": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d20acf9a-f856-447d-8321-04da08441223",
+          "name": "Ввод текста",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "text": "Пример"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "d20acf9a-f856-447d-8321-04da08441223",
+          "name": "Ввод текста",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {},
+          "error": "Type mismatch on link '195e6697-058b-49f3-a418-d1a9db9aa2f4': string → array"
+        }
+      ],
+      "result": {},
+      "lastStepId": "d20acf9a-f856-447d-8321-04da08441223",
+      "error": "Type mismatch on link '195e6697-058b-49f3-a418-d1a9db9aa2f4': string → array"
+    }
+  },
+  {
+    "id": "b7170f22-3ec4-4a2a-9449-e7de48befa77",
+    "skillId": "d5d8611a-4892-49b1-891d-41bda012f57f",
+    "timestamp": "2025-05-27T10:28:56.622Z",
+    "context": {
+      "text": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "fa7d0f37-e6a8-44ba-90f5-02423e981db6",
+          "name": "Ввод текста",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "text": "Пример"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "8cd11b02-8791-40a6-97a4-49f12f74aea4",
+          "name": "Преобразование текста в массив",
+          "input": {
+            "text": "Пример"
+          },
+          "output": {}
+        }
+      ],
+      "result": {},
+      "lastStepId": "8cd11b02-8791-40a6-97a4-49f12f74aea4"
+    }
+  },
+  {
+    "id": "2a33e85f-ae6f-4367-b411-b2362731f615",
+    "skillId": "d5d8611a-4892-49b1-891d-41bda012f57f",
+    "timestamp": "2025-05-27T10:30:44.018Z",
+    "context": {
+      "text": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "fa7d0f37-e6a8-44ba-90f5-02423e981db6",
+          "name": "Ввод текста",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "text": "Пример"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "8cd11b02-8791-40a6-97a4-49f12f74aea4",
+          "name": "Преобразование текста в массив",
+          "input": {
+            "text": "Пример"
+          },
+          "output": {}
+        }
+      ],
+      "result": {},
+      "lastStepId": "8cd11b02-8791-40a6-97a4-49f12f74aea4"
+    }
+  },
+  {
+    "id": "22f883b1-a37f-41d2-a022-5c67e1826ff9",
+    "skillId": "d5d8611a-4892-49b1-891d-41bda012f57f",
+    "timestamp": "2025-05-27T10:33:05.854Z",
+    "context": {
+      "text": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d78c3778-19b6-4eb4-b12e-543daff0c62a",
+          "name": "Ввод текста",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "text": "Пример"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "d1569dda-6f08-4a5f-a90d-1bbdb034df26",
+          "name": "Текст → Массив",
+          "input": {
+            "text": "Пример"
+          },
+          "output": {
+            "items": [
+              "jopa"
+            ]
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "c8ab4cbf-305b-4533-9315-1cbbfaf2cff8",
+          "name": "Цикл по массиву (итерации через шаг)",
+          "input": {
+            "items": [
+              "jopa"
+            ]
+          },
+          "output": {
+            "done": [
+              "JOPA"
+            ]
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "c8ab4cbf-305b-4533-9315-1cbbfaf2cff8",
+          "name": "Цикл по массиву (итерации через шаг)",
+          "input": {
+            "items": [
+              "jopa"
+            ]
+          },
+          "output": {},
+          "error": "Type mismatch on link 'a5e44df8-473f-406a-97a9-d445b446da47': array → string"
+        }
+      ],
+      "result": {},
+      "lastStepId": "c8ab4cbf-305b-4533-9315-1cbbfaf2cff8",
+      "error": "Type mismatch on link 'a5e44df8-473f-406a-97a9-d445b446da47': array → string"
+    }
+  },
+  {
+    "id": "1424150e-e1cf-495d-8099-3e2f13ecea22",
+    "skillId": "d5d8611a-4892-49b1-891d-41bda012f57f",
+    "timestamp": "2025-05-27T10:37:55.164Z",
+    "context": {
+      "text": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d78c3778-19b6-4eb4-b12e-543daff0c62a",
+          "name": "Ввод текста",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "text": "Пример"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "d1569dda-6f08-4a5f-a90d-1bbdb034df26",
+          "name": "Текст → Массив",
+          "input": {
+            "text": "Пример"
+          },
+          "output": {
+            "items": [
+              "jopa"
+            ]
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "c8ab4cbf-305b-4533-9315-1cbbfaf2cff8",
+          "name": "Цикл по массиву (итерации через шаг)",
+          "input": {
+            "items": [
+              "jopa"
+            ]
+          },
+          "output": {
+            "done": [
+              "JOPA"
+            ]
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "fbc4cb43-974d-486a-8354-0eb883b9774a",
+          "name": "LLM вызов",
+          "input": {
+            "prompt": "JOPA"
+          },
+          "output": {
+            "completion": "Hello! How can I assist you today?"
+          }
+        }
+      ],
+      "result": {
+        "completion": "Hello! How can I assist you today?"
+      },
+      "lastStepId": "fbc4cb43-974d-486a-8354-0eb883b9774a"
+    }
   }
 ]

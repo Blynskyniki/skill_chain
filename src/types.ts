@@ -15,29 +15,35 @@ export interface ExecutableCode {
   sourceCode: string;
 }
 
-// --- StepTemplate ---
-// Шаблон переиспользуемого шага (без конфигурации исполнения)
-export interface StepTemplate {
-  id: string;
-  name: string;
-  type: 'code' | 'api_call' | 'transform' | 'condition' | 'loop';
-  description?: string;
-  inputs: Port[];
-  outputs: Port[];
-  configSchema?: JSONSchema7;
-  config?: Record<string, unknown>; // ← добавлено!
-  code?: ExecutableCode;
-}
+export type StepType = 'code' | 'transform' | 'condition' | 'loop';
 
-// --- SkillStep ---
-// Конкретная реализация шага в навыке с привязкой к шаблону
 export interface SkillStep {
+  /** Уникальный ID шага в пределах навыка */
   id: string;
+
+  /** Название для отображения */
   name: string;
-  templateId: string;
-  config: Record<string, unknown>;
+
+  /** Тип шага: влияет на поведение исполнителя */
+  type: StepType;
+
+  /** Описание для UI/документации */
+  description?: string;
+
+  /** Входные порты (определяют ожидаемые значения) */
   inputs: Port[];
+
+  /** Выходные порты (определяют, что возвращает шаг) */
   outputs: Port[];
+
+  /** JSON Schema для настройки конфигурации (например, itemsVar, bodyStepId и т.д.) */
+  configSchema?: JSONSchema7;
+
+  /** Конкретные параметры, определённые пользователем (подходит под configSchema) */
+  config?: Record<string, unknown>;
+
+  /** Исполняемый код — JS или Python, только для type === 'code' */
+  code?: ExecutableCode;
 }
 
 // --- Связи между шагами ---
@@ -70,8 +76,18 @@ export interface SkillExecutionLog {
   context: ExecutionContext;
 }
 
-// --- Ответ при запуске навыка ---
-export interface SkillRunResult {
-  context: ExecutionContext;
-  logId: string;
+export interface StepExecutionLog {
+  order: number;
+  stepId: string;
+  name: string;
+  input: Record<string, unknown>;
+  output: Record<string, unknown>;
+  error?: string;
+}
+
+export interface SkillExecutionResult extends ExecutionContext {
+  steps: StepExecutionLog[];
+  result: Record<string, unknown>;
+  lastStepId: string;
+  error?: string;
 }
