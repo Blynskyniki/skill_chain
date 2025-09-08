@@ -4194,5 +4194,133 @@
       },
       "lastStepId": "fbc4cb43-974d-486a-8354-0eb883b9774a"
     }
+  },
+  {
+    "id": "8b36475e-d9c0-43b6-8702-f084b466a203",
+    "skillId": "d5d8611a-4892-49b1-891d-41bda012f57f",
+    "timestamp": "2025-05-29T06:09:57.851Z",
+    "context": {
+      "text": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d78c3778-19b6-4eb4-b12e-543daff0c62a",
+          "name": "Ввод текста",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "text": "Пример"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "d1569dda-6f08-4a5f-a90d-1bbdb034df26",
+          "name": "Текст → Массив",
+          "input": {
+            "text": "Пример"
+          },
+          "output": {
+            "items": [
+              "jopa"
+            ]
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "c8ab4cbf-305b-4533-9315-1cbbfaf2cff8",
+          "name": "Цикл по массиву (итерации через шаг)",
+          "input": {
+            "items": [
+              "jopa"
+            ]
+          },
+          "output": {
+            "done": [
+              "JOPA"
+            ]
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "fbc4cb43-974d-486a-8354-0eb883b9774a",
+          "name": "LLM вызов",
+          "input": {
+            "prompt": "JOPA"
+          },
+          "output": {
+            "completion": "Hello! How can I assist you today?"
+          }
+        }
+      ],
+      "result": {
+        "completion": "Hello! How can I assist you today?"
+      },
+      "lastStepId": "fbc4cb43-974d-486a-8354-0eb883b9774a"
+    }
+  },
+  {
+    "id": "ae718182-9db9-4795-b6d3-a613f4922df1",
+    "skillId": "d5d8611a-4892-49b1-891d-41bda012f57f",
+    "timestamp": "2025-05-29T06:23:43.923Z",
+    "context": {
+      "text": "jopa",
+      "steps": [
+        {
+          "order": 0,
+          "stepId": "d78c3778-19b6-4eb4-b12e-543daff0c62a",
+          "name": "Ввод текста",
+          "input": {
+            "text": "jopa"
+          },
+          "output": {
+            "text": "Пример"
+          }
+        },
+        {
+          "order": 1,
+          "stepId": "d1569dda-6f08-4a5f-a90d-1bbdb034df26",
+          "name": "Текст → Массив",
+          "input": {
+            "text": "Пример"
+          },
+          "output": {
+            "items": [
+              "jopa"
+            ]
+          }
+        },
+        {
+          "order": 2,
+          "stepId": "c8ab4cbf-305b-4533-9315-1cbbfaf2cff8",
+          "name": "Цикл по массиву (итерации через шаг)",
+          "input": {
+            "items": [
+              "jopa"
+            ]
+          },
+          "output": {
+            "done": [
+              "JOPA"
+            ]
+          }
+        },
+        {
+          "order": 3,
+          "stepId": "fbc4cb43-974d-486a-8354-0eb883b9774a",
+          "name": "LLM вызов",
+          "input": {
+            "prompt": "JOPA"
+          },
+          "output": {
+            "completion": "Hello! How can I assist you today?"
+          }
+        }
+      ],
+      "result": {
+        "completion": "Hello! How can I assist you today?"
+      },
+      "lastStepId": "fbc4cb43-974d-486a-8354-0eb883b9774a"
+    }
   }
 ]

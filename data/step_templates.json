@@ -95,7 +95,7 @@
       }
     ],
     "config": {
-      "minLength": 5
+      "minLength": 6
     },
     "configSchema": {
       "type": "object",

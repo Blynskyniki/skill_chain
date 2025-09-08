@@ -222,6 +222,7 @@ export const loopStep = (id = uuidv4()): SkillStep => ({
   },
 });
 
+// Шаг: llm
 export const llmCall = (id = uuidv4()): SkillStep => {
   return {
     id,
@@ -274,7 +275,6 @@ export const llmCall = (id = uuidv4()): SkillStep => {
   };
 };
 
-// Экспорт шаблонов
 export const SkillSteps: Record<string, () => SkillStep> = {
   textInput: textInputStep,
   toUpperCase: toUpperCaseStep,
